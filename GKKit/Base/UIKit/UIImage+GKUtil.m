@@ -662,13 +662,13 @@ static NSTimeInterval _yy_CGImageSourceGetGIFFrameDelayAtIndex(CGImageSourceRef 
     return img;
 }
 
-//- (UIImage *)imageByRotateLeft90 {
-//    return [self imageByRotate:DegreesToRadians(90) fitSize:YES];
-//}
-//
-//- (UIImage *)imageByRotateRight90 {
-//    return [self imageByRotate:DegreesToRadians(-90) fitSize:YES];
-//}
+- (UIImage *)imageByRotateLeft90 {
+    return [self imageByRotate:(90 * M_PI / 180) fitSize:YES];
+}
+
+- (UIImage *)imageByRotateRight90 {
+    return [self imageByRotate:(-90 * M_PI / 180) fitSize:YES];
+}
 
 - (UIImage *)imageByRotate180 {
     return [self _yy_flipHorizontal:YES vertical:YES];

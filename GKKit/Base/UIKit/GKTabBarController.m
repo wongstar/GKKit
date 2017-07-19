@@ -41,6 +41,7 @@
     
     hasSelectedImages=true;
     if(_tabSelectedImages == nil ){
+          hasSelectedImages=false;
     _tabSelectedImages=@[@"tab_btn_activity_clicked",@"tab_btn_activity_clicked",@"tab_btn_activity_clicked",@"tab_btn_activity_clicked",@"tab_btn_activity_clicked"];
         
     }
@@ -138,7 +139,7 @@
     _centerButton.frame = CGRectMake(origin.x - buttonSize.height/2, origin.y - buttonSize.height/2 + 0.5, buttonSize.height, buttonSize.height);
     UIImage *image;
     if(imageName==nil){
-        image=[NSBundle imageFromGKBundleByName:@"tab_btn_add"];
+        image=[UIImage imageNamedWithGK:@"tab_btn_add"];
     }else{
         image=[UIImage imageNamed:imageName];
     }

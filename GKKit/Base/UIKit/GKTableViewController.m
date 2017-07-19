@@ -40,6 +40,12 @@
     return self;
 }
 
+- (void)dealloc
+{
+    self.baseTableView.delegate = nil;
+    self.baseTableView.dataSource = nil;
+    self.baseTableView = nil;
+}
 
 
 - (void)viewDidLoad {

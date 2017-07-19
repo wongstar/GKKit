@@ -48,10 +48,21 @@ typedef void (^GKNavButtonClickBlock)();
 @property (nonatomic,strong)UIImage *backImage;
 
 
+ 
+ 
+
+/**
+ set nav item left or right,if title is nil only image
+
+ @param title title description
+ @param iconImageName the image name
+ @param buttonType buttonType left right or back
+ @param navButtonClickBlock click event.
+ */
 - (void)setNavButtonWithTitle:(NSString *)title
                 withIconImageName:(NSString *)iconImageName
                 withNavButtonType:(NavButtonType)buttonType
-          withNavButtonClickBlock:(GKNavButtonClickBlock)navButtonClickBlock;
+                withNavButtonClickBlock:(GKNavButtonClickBlock)navButtonClickBlock;
 
 - (void)back;
 - (void)home;

@@ -27,9 +27,12 @@
 
 
 +(UIImage *)imageFromGKBundleByName:(NSString *)imageName ofType:(NSString *)type{
-    static UIImage *image = nil;
+    UIImage *image = nil;
     if (image == nil) {
-        image = [[UIImage imageWithContentsOfFile:[[self fromGKBundle] pathForResource:imageName ofType:type]] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        NSBundle *gkBundle = [NSBundle fromGKBundle];
+        NSString *path=[[gkBundle resourcePath] stringByAppendingString:[NSString stringWithFormat:@"/%@/%@",@"resource",imageName]];
+        image = [[UIImage imageWithContentsOfFile:path] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+
     }
     return image;
 }

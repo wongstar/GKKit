@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-//#import "GKComponent.h"
+#import "GKComponent.h"
+#import "UIImage+GKUtil.h"
 
 
 @interface ViewController ()
@@ -19,8 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-       
+    UIImageView *imageView=[[UIImageView alloc] initWithImage: [GKComponent gkGetImageByName:@"tab_btn_add"]];
+    imageView.frame=CGRectMake(100, 100, 30, 30);
+    [self.view addSubview:imageView];
     
+   
     //NSArray *arr=[]
 //    NSString *value=[GKComponent gkLocalizedStringForKey:@"name"];
 //    NSLog(@"the value is%@",value);

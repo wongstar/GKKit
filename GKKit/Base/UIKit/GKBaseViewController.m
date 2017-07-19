@@ -218,6 +218,15 @@
     return GKNaviBarStyleDefault;
 }
 
+
+/**
+ set nav item left or right,if title is nil only image
+ 
+ @param title title description
+ @param iconImageName the image name
+ @param buttonType buttonType left right or back
+ @param navButtonClickBlock click event.
+ */
 - (void)setNavButtonWithTitle:(NSString *)title
             withIconImageName:(NSString *)iconImageName
             withNavButtonType:(NavButtonType)buttonType
@@ -234,6 +243,7 @@
                                                target:nil action:nil];
             negativeSpacer.width = 5;
             UIBarButtonItem *rightBarBtn = [[UIBarButtonItem alloc] initWithTitle:title style:UIBarButtonItemStylePlain target:self action:@selector(efNavrightButtonClick:)];
+            //rightBarBtn.image=[UIImage imageNamed:iconImageName];
             
             self.navigationItem.rightBarButtonItems = [NSArray arrayWithObjects:negativeSpacer,rightBarBtn, nil];
         }

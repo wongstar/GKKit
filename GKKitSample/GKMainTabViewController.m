@@ -66,6 +66,9 @@
     NSArray *vc=@[oneNavi,twoNavi,threeNavi,fourNavi,fiveNavi];
     
     [self initTabWithVC:vc];
+    [self addCenterButtonWithBlock:^(id sender, id obj) {
+        
+    }];
     // Do any additional setup after loading the view.
 }
 
