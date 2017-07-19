@@ -67,6 +67,7 @@
 		78D8CE181F1E0475005C262F /* DMIconAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE151F1E0475005C262F /* DMIconAutoFooter.m */; };
 		78D8CE191F1E0475005C262F /* DMShiningHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE171F1E0475005C262F /* DMShiningHeader.m */; };
 		78D8CE1C1F1F0E58005C262F /* GKFadeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE1B1F1F0E58005C262F /* GKFadeNavigationController.m */; };
+		78D8CE1F1F1F6BDD005C262F /* GKMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +200,8 @@
 		78D8CE171F1E0475005C262F /* DMShiningHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DMShiningHeader.m; sourceTree = "<group>"; };
 		78D8CE1A1F1F0E58005C262F /* GKFadeNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKFadeNavigationController.h; sourceTree = "<group>"; };
 		78D8CE1B1F1F0E58005C262F /* GKFadeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKFadeNavigationController.m; sourceTree = "<group>"; };
+		78D8CE1D1F1F6BDD005C262F /* GKMainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKMainTabViewController.h; sourceTree = "<group>"; };
+		78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKMainTabViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -245,6 +248,8 @@
 				7852CBC71F1712E8007FFD0C /* AppDelegate.m */,
 				7852CBC91F1712E8007FFD0C /* ViewController.h */,
 				7852CBCA1F1712E8007FFD0C /* ViewController.m */,
+				78D8CE1D1F1F6BDD005C262F /* GKMainTabViewController.h */,
+				78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */,
 				7852CBCC1F1712E8007FFD0C /* Main.storyboard */,
 				7852CBD21F1712E8007FFD0C /* Assets.xcassets */,
 				7852CBD41F1712E8007FFD0C /* LaunchScreen.storyboard */,
@@ -709,6 +714,7 @@
 				78D8CE0E1F1DFBAF005C262F /* MJRefreshConst.m in Sources */,
 				78D8CDAF1F1C67FE005C262F /* CustomIOSAlertView.m in Sources */,
 				78D8CDC61F1C9E49005C262F /* CALayer+Util.m in Sources */,
+				78D8CE1F1F1F6BDD005C262F /* GKMainTabViewController.m in Sources */,
 				78D8CDB21F1C6C8C005C262F /* NSNotificationCenter+GKUtil.m in Sources */,
 				78D8CDBE1F1C9723005C262F /* HSDownloadManager.m in Sources */,
 				78D8CDA11F1C6673005C262F /* NSBundle+GKUtil.m in Sources */,

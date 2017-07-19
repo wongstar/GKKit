@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "GKMainTabViewController.h"
 
 @interface AppDelegate ()
 
@@ -18,7 +19,14 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
+    GKMainTabViewController *mainTab=[[GKMainTabViewController alloc] init];
+    
+    self.window.rootViewController = mainTab;
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 

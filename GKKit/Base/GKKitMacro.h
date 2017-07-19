@@ -43,6 +43,16 @@ return _sharedInstance;                                 \
 }
 
 
+#define GKAssertNil(condition, description, ...) NSAssert(!(condition), (description), ##__VA_ARGS__)
+#define GKCAssertNil(condition, description, ...) NSCAssert(!(condition), (description), ##__VA_ARGS__)
+
+#define GKAssertNotNil(condition, description, ...) NSAssert((condition), (description), ##__VA_ARGS__)
+#define GKCAssertNotNil(condition, description, ...) NSCAssert((condition), (description), ##__VA_ARGS__)
+
+#define GKAssertMainThread() NSAssert([NSThread isMainThread], @"This method must be called on the main thread")
+#define GKCAssertMainThread() NSCAssert([NSThread isMainThread], @"This method must be called on the main thread")
+
+
 
 // App Frame
 #define Application_Frame       [[UIScreen mainScreen] applicationFrame]

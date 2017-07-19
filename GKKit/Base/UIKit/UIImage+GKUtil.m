@@ -16,6 +16,13 @@
 
 @implementation UIImage (GKUtil)
 
+
++(UIImage *)imageNamedWithGK:(NSString *)name{
+    return [NSBundle imageFromGKBundleByName:name];
+}
+
+
+
 + (UIImage *)imageWithColor:(UIColor *)color
 {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
@@ -655,13 +662,13 @@ static NSTimeInterval _yy_CGImageSourceGetGIFFrameDelayAtIndex(CGImageSourceRef 
     return img;
 }
 
-- (UIImage *)imageByRotateLeft90 {
-    return [self imageByRotate:DegreesToRadians(90) fitSize:YES];
-}
-
-- (UIImage *)imageByRotateRight90 {
-    return [self imageByRotate:DegreesToRadians(-90) fitSize:YES];
-}
+//- (UIImage *)imageByRotateLeft90 {
+//    return [self imageByRotate:DegreesToRadians(90) fitSize:YES];
+//}
+//
+//- (UIImage *)imageByRotateRight90 {
+//    return [self imageByRotate:DegreesToRadians(-90) fitSize:YES];
+//}
 
 - (UIImage *)imageByRotate180 {
     return [self _yy_flipHorizontal:YES vertical:YES];

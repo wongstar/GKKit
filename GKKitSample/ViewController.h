@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface ViewController : UIViewController
+#import "GKBaseViewController.h"
+@interface ViewController : GKBaseViewController
 
 
 @end

@@ -10,7 +10,9 @@
 
 @interface UIImage (GKUtil)
 
-+ (UIImage*)imageWithImageSimple:(UIImage*)image scaledToSize:(CGSize)newSize;
++(UIImage *)imageNamedWithGK:(NSString *)name;
+
++ (UIImage *)imageWithImageSimple:(UIImage*)image scaledToSize:(CGSize)newSize;
 
 +(NSData *)imageData:(UIImage *)myimage;
 

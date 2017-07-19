@@ -9,6 +9,7 @@
 #import "ViewController.h"
 //#import "GKComponent.h"
 
+
 @interface ViewController ()
 
 @end
@@ -17,6 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+       
+    
+    //NSArray *arr=[]
 //    NSString *value=[GKComponent gkLocalizedStringForKey:@"name"];
 //    NSLog(@"the value is%@",value);
         // Do any additional setup after loading the view, typically from a nib.
