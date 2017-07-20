@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface GKTabBarController : UITabBarController
-@property(nonatomic,strong)UIButton *centerButton;
+//@property(nonatomic,strong)UIButton *centerButton;
 @property(nonatomic,strong)GKActionWithBlock centerButtonBlock;
 
 
@@ -26,7 +26,11 @@
 
 -(void)initTabWithVC:(NSArray *)vc withTabNormalImages:(NSArray *)normalImages withTabSelectedImage:(NSArray *)selectedImages withText:(NSArray *)texts;
 
--(void)addCenterButtonWithImage:(NSString *)imageName witchBlock:(GKActionWithBlock)block;
+
+-(void)buttonInToolBarWithImage:(NSString *)imageName withIndex:(NSInteger)index withBlock:(GKActionWithBlock)block;
+
+-(void)addCenterButtonWithNormalImage:(NSString *)normlName  withSeletedImageName:(NSString *)selectedImageName witchBlock:(GKActionWithBlock)block;
+
 -(void)addCenterButtonWithBlock:(GKActionWithBlock)block;
 
 @end

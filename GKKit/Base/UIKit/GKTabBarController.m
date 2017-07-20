@@ -79,6 +79,11 @@
     return _selectTextAttrs;
 }
 
+-(void)setSelectIndex:(NSInteger)selectIndex{
+    _selectIndex=selectIndex;
+    self.selectedIndex=_selectIndex;
+}
+
 -(void)initTabWithVC:(NSArray *)vc{
     [self initTabWithVC:vc withTabNormalImages:self.tabNormalImages withTabSelectedImage:self.tabSelectedImages withText:self.tabTexts];
 }
@@ -93,8 +98,6 @@
     }
     
 }
-
-
 
 
 
@@ -123,31 +126,68 @@
     [self addChildViewController:childVC];
 }
 
-
--(void)addCenterButtonWithBlock:(GKActionWithBlock)block{
-    [self addCenterButtonWithImage:nil witchBlock:block];
+-(void)set
+{
+    [self.tabBar.items[3] setImage:[[UIImage imageNamed:@"tab_btn_activity_notification"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
 }
 
--(void)addCenterButtonWithImage:(NSString *)imageName witchBlock:(GKActionWithBlock)block
-{
-    _centerButton = [UIButton buttonWithType:UIButtonTypeCustom];
+
+-(void)buttonInToolBarWithNormalImage:(NSString *)normal withSelectedImage:(NSString *)selected withIndex:(NSInteger)index withBlock:(GKActionWithBlock)block{
+    NSInteger count =_tabNormalImages.count;
+    GKAssertNil(count==0, @"tabBar count must large zero");
+    float width = self.tabBar.width;
+    CGSize buttonSize = CGSizeMake(self.tabBar.frame.size.height - 4, self.tabBar.frame.size.height - 4);
+    
+    float itemWidth = width/count;
+    
+    float x = index*itemWidth+(itemWidth-buttonSize.width)/2;
+    float y= (self.tabBar.height-buttonSize.height)/2;
+    
     
     self.centerButtonBlock = block;
-    CGPoint origin = [self.view convertPoint:self.tabBar.center toView:self.tabBar];
-    CGSize buttonSize = CGSizeMake(self.tabBar.frame.size.width / 5 - 6, self.tabBar.frame.size.height - 4);
     
-    _centerButton.frame = CGRectMake(origin.x - buttonSize.height/2, origin.y - buttonSize.height/2 + 0.5, buttonSize.height, buttonSize.height);
-    UIImage *image;
-    if(imageName==nil){
-        image=[UIImage imageNamedWithGK:@"tab_btn_add"];
+    UIButton *button=[[UIButton alloc] initWithFrame:CGRectMake(x, y,buttonSize.width,buttonSize.height)];
+    
+    UIImage *normalImage;
+    if(normal==nil){
+        normalImage=[UIImage imageNamedWithGK:@"tab_btn_add"];
     }else{
-        image=[UIImage imageNamed:imageName];
+        normalImage=[UIImage imageNamed:normal];
     }
     
-    [_centerButton setImage:image forState:UIControlStateNormal];
+    UIImage *selectedImage;
+    if(selected == nil ){
+        selectedImage = [UIImage imageNamedWithGK:@"tab_btn_add_selected"];
+    } else {
+        selectedImage = [UIImage imageNamed:selected];
+    }
     
     
-    [_centerButton addTarget:self action:@selector(centerButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    [button setImage:normalImage forState:UIControlStateNormal];
+    [button setImage:selectedImage forState:UIControlStateSelected];
+    
+    [button addTarget:self action:@selector(centerButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.tabBar addSubview:button];
+
+}
+
+
+-(void)addCenterButtonWithBlock:(GKActionWithBlock)block{
+    [self addCenterButtonWithNormalImage:nil withSeletedImageName:nil witchBlock:^(id sender, id obj) {
+        
+    }];
+}
+
+-(void)addCenterButtonWithNormalImage:(NSString *)normlName  withSeletedImageName:(NSString *)selectedImageName witchBlock:(GKActionWithBlock)block
+{
+    
+    NSInteger count =_tabNormalImages.count;
+    GKAssertNil(count==0, @"tabBar count must large zero");
+    
+    [self buttonInToolBarWithNormalImage:normlName withSelectedImage:selectedImageName withIndex:count/2 withBlock:^(id sender, id obj) {
+        
+    }];
 }
 
 

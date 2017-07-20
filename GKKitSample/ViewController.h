@@ -2,7 +2,7 @@
 //  ViewController.h
 //  GKKitSample
 //
-//  Created by igeak on 2017/7/13.
+//  Created by gk on 2017/7/13.
 //  Copyright © 2017年 star. All rights reserved.
 //
 

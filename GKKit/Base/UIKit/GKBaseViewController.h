@@ -67,6 +67,18 @@ typedef void (^GKNavButtonClickBlock)();
 - (void)back;
 - (void)home;
 - (void)dismiss;
+
+-(void)hideToolBar;
+
+-(void)showToolBar;
+
+-(void)pushViewController:(UIViewController *)vc;
+
+-(void)pushViewController:(UIViewController *)vc animated:(BOOL)animated;
+
+
+-(void)setBackNormalImage:(NSString *)normal selectedImage:(NSString *)selected;
+
 - (GKNaviBarStyle)naviBarStyle;
 @end
 

@@ -23,7 +23,7 @@
     ViewController *one=[[ViewController alloc] init];
     one.title=@"one";
     one.navigationBarHidden=YES;
-    one.backgroundColor=[UIColor redColor];
+    one.backgroundColor=[UIColor greenColor];
     
     GKUINavigationController *oneNavi=[[GKUINavigationController alloc] initWithRootViewController:one];
     
@@ -57,7 +57,7 @@
     
     
     ViewController *five=[[ViewController alloc] init];
-    five.title=@"one";
+    five.title=@"five";
     five.navigationBarHidden=YES;
     five.backgroundColor=[UIColor greenColor];
     
@@ -66,9 +66,14 @@
     NSArray *vc=@[oneNavi,twoNavi,threeNavi,fourNavi,fiveNavi];
     
     [self initTabWithVC:vc];
-    [self addCenterButtonWithBlock:^(id sender, id obj) {
-        
-    }];
+    
+    
+//    [self buttonInToolBarWithImage:nil withIndex:2 withBlock:^(id sender, id obj) {
+//        
+//    }];
+//    [self addCenterButtonWithBlock:^(id sender, id obj) {
+//        
+//    }];
     // Do any additional setup after loading the view.
 }
 

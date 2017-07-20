@@ -68,6 +68,8 @@
 		78D8CE191F1E0475005C262F /* DMShiningHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE171F1E0475005C262F /* DMShiningHeader.m */; };
 		78D8CE1C1F1F0E58005C262F /* GKFadeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE1B1F1F0E58005C262F /* GKFadeNavigationController.m */; };
 		78D8CE1F1F1F6BDD005C262F /* GKMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */; };
+		78D8CE251F204CD6005C262F /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE241F204CD6005C262F /* TestTableViewController.m */; };
+		78D8CE281F204E47005C262F /* TestBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE271F204E47005C262F /* TestBaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -202,6 +204,10 @@
 		78D8CE1B1F1F0E58005C262F /* GKFadeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKFadeNavigationController.m; sourceTree = "<group>"; };
 		78D8CE1D1F1F6BDD005C262F /* GKMainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKMainTabViewController.h; sourceTree = "<group>"; };
 		78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKMainTabViewController.m; sourceTree = "<group>"; };
+		78D8CE231F204CD6005C262F /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
+		78D8CE241F204CD6005C262F /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		78D8CE261F204E47005C262F /* TestBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBaseViewController.h; sourceTree = "<group>"; };
+		78D8CE271F204E47005C262F /* TestBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +256,10 @@
 				7852CBCA1F1712E8007FFD0C /* ViewController.m */,
 				78D8CE1D1F1F6BDD005C262F /* GKMainTabViewController.h */,
 				78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */,
+				78D8CE261F204E47005C262F /* TestBaseViewController.h */,
+				78D8CE271F204E47005C262F /* TestBaseViewController.m */,
+				78D8CE231F204CD6005C262F /* TestTableViewController.h */,
+				78D8CE241F204CD6005C262F /* TestTableViewController.m */,
 				7852CBCC1F1712E8007FFD0C /* Main.storyboard */,
 				7852CBD21F1712E8007FFD0C /* Assets.xcassets */,
 				7852CBD41F1712E8007FFD0C /* LaunchScreen.storyboard */,
@@ -717,6 +727,7 @@
 				78D8CE1F1F1F6BDD005C262F /* GKMainTabViewController.m in Sources */,
 				78D8CDB21F1C6C8C005C262F /* NSNotificationCenter+GKUtil.m in Sources */,
 				78D8CDBE1F1C9723005C262F /* HSDownloadManager.m in Sources */,
+				78D8CE281F204E47005C262F /* TestBaseViewController.m in Sources */,
 				78D8CDA11F1C6673005C262F /* NSBundle+GKUtil.m in Sources */,
 				78D8CE121F1DFBAF005C262F /* UIView+MJExtension.m in Sources */,
 				78D8CDFF1F1DFBAF005C262F /* MJRefreshAutoFooter.m in Sources */,
@@ -757,6 +768,7 @@
 				78D8CE0F1F1DFBAF005C262F /* NSBundle+MJRefresh.m in Sources */,
 				7852CBC51F1712E8007FFD0C /* main.m in Sources */,
 				78D8CE011F1DFBAF005C262F /* MJRefreshComponent.m in Sources */,
+				78D8CE251F204CD6005C262F /* TestTableViewController.m in Sources */,
 				78D8CDBF1F1C9723005C262F /* HSSessionModel.m in Sources */,
 				78D8CDC31F1C9772005C262F /* UIImage+GKUtil.m in Sources */,
 			);

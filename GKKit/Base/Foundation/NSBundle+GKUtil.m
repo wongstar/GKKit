@@ -31,7 +31,7 @@
     if (image == nil) {
         NSBundle *gkBundle = [NSBundle fromGKBundle];
         NSString *path=[[gkBundle resourcePath] stringByAppendingString:[NSString stringWithFormat:@"/%@/%@",@"resource",imageName]];
-        image = [[UIImage imageWithContentsOfFile:path] imageWithRenderingMode:UIImageRenderingModeAlwaysTemplate];
+        image = [UIImage imageWithContentsOfFile:path];
 
     }
     return image;

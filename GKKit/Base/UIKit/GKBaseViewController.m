@@ -9,14 +9,15 @@
 #import "GKBaseViewController.h"
 #import "GKKitMacro.h"
 
-@interface GKBaseViewController ()
+@interface GKBaseViewController (){
+    UIButton *backButton;
+}
 @property(nonatomic,copy)   GKNavButtonClickBlock evNavLeftButtonClickBlock;
 @property(nonatomic,copy)   GKNavButtonClickBlock evNavRightButtonClickBlock;
+
 @end
 
 @implementation GKBaseViewController
-
-
 
 
 - (void)setTitle:(NSString *)title
@@ -113,37 +114,43 @@
 {
     UIImage *image = [self icon_back];
     
-    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
-    [button setBackgroundColor:[UIColor clearColor]];
-    [button setImage:image forState:UIControlStateNormal];
-    [button addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-    button.frame = CGRectMake(0, 0, 40 + image.size.width, 45);
+    backButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    [backButton setBackgroundColor:[UIColor clearColor]];
+    [backButton setImage:image forState:UIControlStateNormal];
+    [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    backButton.frame = CGRectMake(0, 0, 40 + image.size.width, 45);
     
-    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:button];
+    
+    UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:backButton];
+    
     self.navigationItem.leftBarButtonItem = item;
 }
 
 
-
+-(void)setBackNormalImage:(NSString *)normal selectedImage:(NSString *)selected{
+   
+     [backButton setImage:[UIImage imageNamed:normal] forState:UIControlStateNormal];
+     [backButton setImage:[UIImage imageNamed:selected] forState:UIControlStateSelected];
+}
 
 - (UIImage *)icon_back
 {
     
     GKNaviBarStyle gkNaviBarStyle=[self naviBarStyle];
     if (GKNaviBarStyleRed == gkNaviBarStyle) {
-        UIImage *image=[NSBundle imageFromGKBundleByName:@"icon_back_white"];
+        UIImage *image=[UIImage imageNamedWithGK:@"icon_back_white"];
         return image;
     }else if(GKNaviBarStyleDefault==gkNaviBarStyle){
-        UIImage *image=[NSBundle imageFromGKBundleByName:@"car_back_icon"];
+        UIImage *image=[UIImage imageNamedWithGK:@"black_back_icon"];
         
          return image;
     }else if(GKNaviBarStyleOther==gkNaviBarStyle) {
         if(_backImage==nil){
-            _backImage=[NSBundle imageFromGKBundleByName:@"car_back_icon.png"];
+            _backImage=[UIImage imageNamedWithGK:@"black_back_icon"];
         }
         return _backImage;
     }else{
-        return [NSBundle imageFromGKBundleByName:@"car_back_icon.png"];
+        return [UIImage imageNamedWithGK:@"black_back_icon"];
     }
 }
 
@@ -188,6 +195,16 @@
     
 }
 
+
+-(void)hideToolBar{
+    self.hidesBottomBarWhenPushed = YES;
+}
+-(void)showToolBar{
+    self.hidesBottomBarWhenPushed = NO;
+}
+
+
+
 - (void)back
 {
     [self.navigationController popViewControllerAnimated:YES];
@@ -201,6 +218,15 @@
 - (void)dismiss
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+-(void)pushViewController:(UIViewController *)vc{
+    [self pushViewController:vc animated:YES];
+}
+
+-(void)pushViewController:(UIViewController *)vc animated:(BOOL)animated{
+    [self.navigationController pushViewController:vc animated:animated];
 }
 
 - (BOOL)showFirstLevelNavigationBarBackgroudImage
