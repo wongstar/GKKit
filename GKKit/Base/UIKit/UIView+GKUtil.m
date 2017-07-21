@@ -5,10 +5,10 @@
 //  Copyright (c) 2013年 CALACULU. All rights reserved.
 //
 
-#import "UIView+Frame.h"
+#import "UIView+GKUtil.h"
 #import <QuartzCore/QuartzCore.h>
 
-@implementation UIView (Frame)
+@implementation UIView (GKUtil)
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 - (CGFloat)left {

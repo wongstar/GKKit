@@ -18,6 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setTitle:LSTR(@"TestBaseView..")];
+    [self setNavButtonWithTitle:@"Share" withIconImageName:nil withNavButtonType:NavRightButtonType withNavButtonClickBlock:^{
+        
+    }];
     // Do any additional setup after loading the view.
 }
 

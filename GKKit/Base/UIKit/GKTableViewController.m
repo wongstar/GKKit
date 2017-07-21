@@ -167,12 +167,38 @@
 
 - (void)pullToRefresh
 {
+    //debugLog(@"call in baseTableViewController pullToRefresh...");
     // 子类override
 }
 
 - (void)loadMore
 {
+    //debugLog(@"call in baseTableViewController loadMore...");
     // 子类override
+}
+
+
+/**
+  heade refreshing..
+ */
+-(void)headerEndFrefreshing{
+     [self.tableView.mj_header endRefreshing];
+}
+
+/**
+ *  停止刷新
+ */
+-(void)endRefresh{
+    [self.tableView.mj_header endRefreshing];
+    [self.tableView.mj_footer endRefreshing];
+}
+
+
+/**
+ footer end refresh..
+ */
+-(void)footerEndRefreshing{
+    [self.tableView.mj_footer endRefreshing];
 }
 
 #pragma mark - UITableViewDataSource

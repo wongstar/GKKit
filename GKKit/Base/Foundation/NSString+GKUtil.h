@@ -393,4 +393,16 @@
  @return A new string create from the file in UTF-8 character encoding.
  */
 + (nullable NSString *)stringNamed:(NSString *)name;
+
+
+-(NSString *)RMBString;
+
++(NSString *)dictionryToString:(NSDictionary*)dict;
+
++(int)transformaToInt:(NSString *)value;
+
++(float)getStringHeight:(NSString *)titleString withFont:(UIFont *)font;
+
++(float)getStringWidth:(NSString *)titleString withFont:(UIFont *)font;
+
 @end

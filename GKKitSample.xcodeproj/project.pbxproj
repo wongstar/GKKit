@@ -19,7 +19,7 @@
 		78D8CD891F1C6646005C262F /* GKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD601F1C6646005C262F /* GKTabBarController.m */; };
 		78D8CD8A1F1C6646005C262F /* GKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD621F1C6646005C262F /* GKTableViewController.m */; };
 		78D8CD8B1F1C6646005C262F /* GKUINavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD641F1C6646005C262F /* GKUINavigationController.m */; };
-		78D8CD8C1F1C6646005C262F /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD661F1C6646005C262F /* UIView+Frame.m */; };
+		78D8CD8C1F1C6646005C262F /* UIView+GKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD661F1C6646005C262F /* UIView+GKUtil.m */; };
 		78D8CD8D1F1C6646005C262F /* GKResource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 78D8CD681F1C6646005C262F /* GKResource.bundle */; };
 		78D8CD8E1F1C6646005C262F /* QRItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD6D1F1C6646005C262F /* QRItem.m */; };
 		78D8CD8F1F1C6646005C262F /* QRMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD6F1F1C6646005C262F /* QRMenu.m */; };
@@ -40,7 +40,7 @@
 		78D8CDBF1F1C9723005C262F /* HSSessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CDBA1F1C9723005C262F /* HSSessionModel.m */; };
 		78D8CDC01F1C9723005C262F /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CDBD1F1C9723005C262F /* NSString+Hash.m */; };
 		78D8CDC31F1C9772005C262F /* UIImage+GKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CDC21F1C9772005C262F /* UIImage+GKUtil.m */; };
-		78D8CDC61F1C9E49005C262F /* CALayer+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CDC51F1C9E49005C262F /* CALayer+Util.m */; };
+		78D8CDC61F1C9E49005C262F /* CALayer+GKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CDC51F1C9E49005C262F /* CALayer+GKUtil.m */; };
 		78D8CDC91F1C9EA1005C262F /* GKUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CDC81F1C9EA1005C262F /* GKUtilities.m */; };
 		78D8CDCE1F1DAF67005C262F /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CDCB1F1DAF67005C262F /* NSObject+YYModel.m */; };
 		78D8CDCF1F1DAF67005C262F /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CDCD1F1DAF67005C262F /* YYClassInfo.m */; };
@@ -70,6 +70,7 @@
 		78D8CE1F1F1F6BDD005C262F /* GKMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */; };
 		78D8CE251F204CD6005C262F /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE241F204CD6005C262F /* TestTableViewController.m */; };
 		78D8CE281F204E47005C262F /* TestBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE271F204E47005C262F /* TestBaseViewController.m */; };
+		78D8CE2B1F21A6F4005C262F /* UIButton+GKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE2A1F21A6F4005C262F /* UIButton+GKUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -106,8 +107,8 @@
 		78D8CD621F1C6646005C262F /* GKTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKTableViewController.m; sourceTree = "<group>"; };
 		78D8CD631F1C6646005C262F /* GKUINavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKUINavigationController.h; sourceTree = "<group>"; };
 		78D8CD641F1C6646005C262F /* GKUINavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKUINavigationController.m; sourceTree = "<group>"; };
-		78D8CD651F1C6646005C262F /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
-		78D8CD661F1C6646005C262F /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		78D8CD651F1C6646005C262F /* UIView+GKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GKUtil.h"; sourceTree = "<group>"; };
+		78D8CD661F1C6646005C262F /* UIView+GKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GKUtil.m"; sourceTree = "<group>"; };
 		78D8CD671F1C6646005C262F /* GKKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKKit.h; sourceTree = "<group>"; };
 		78D8CD681F1C6646005C262F /* GKResource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GKResource.bundle; sourceTree = "<group>"; };
 		78D8CD6C1F1C6646005C262F /* QRItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRItem.h; sourceTree = "<group>"; };
@@ -148,8 +149,8 @@
 		78D8CDBD1F1C9723005C262F /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
 		78D8CDC11F1C9772005C262F /* UIImage+GKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+GKUtil.h"; sourceTree = "<group>"; };
 		78D8CDC21F1C9772005C262F /* UIImage+GKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+GKUtil.m"; sourceTree = "<group>"; };
-		78D8CDC41F1C9E49005C262F /* CALayer+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+Util.h"; sourceTree = "<group>"; };
-		78D8CDC51F1C9E49005C262F /* CALayer+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+Util.m"; sourceTree = "<group>"; };
+		78D8CDC41F1C9E49005C262F /* CALayer+GKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+GKUtil.h"; sourceTree = "<group>"; };
+		78D8CDC51F1C9E49005C262F /* CALayer+GKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+GKUtil.m"; sourceTree = "<group>"; };
 		78D8CDC71F1C9EA1005C262F /* GKUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKUtilities.h; sourceTree = "<group>"; };
 		78D8CDC81F1C9EA1005C262F /* GKUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKUtilities.m; sourceTree = "<group>"; };
 		78D8CDCA1F1DAF67005C262F /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
@@ -208,6 +209,8 @@
 		78D8CE241F204CD6005C262F /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
 		78D8CE261F204E47005C262F /* TestBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBaseViewController.h; sourceTree = "<group>"; };
 		78D8CE271F204E47005C262F /* TestBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBaseViewController.m; sourceTree = "<group>"; };
+		78D8CE291F21A6F4005C262F /* UIButton+GKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GKUtil.h"; sourceTree = "<group>"; };
+		78D8CE2A1F21A6F4005C262F /* UIButton+GKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GKUtil.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,14 +327,16 @@
 				78D8CD621F1C6646005C262F /* GKTableViewController.m */,
 				78D8CD631F1C6646005C262F /* GKUINavigationController.h */,
 				78D8CD641F1C6646005C262F /* GKUINavigationController.m */,
-				78D8CD651F1C6646005C262F /* UIView+Frame.h */,
-				78D8CD661F1C6646005C262F /* UIView+Frame.m */,
+				78D8CD651F1C6646005C262F /* UIView+GKUtil.h */,
+				78D8CD661F1C6646005C262F /* UIView+GKUtil.m */,
 				78D8CDB31F1C6D6E005C262F /* UIColor+GKUtil.h */,
 				78D8CDB41F1C6D6E005C262F /* UIColor+GKUtil.m */,
 				78D8CDC11F1C9772005C262F /* UIImage+GKUtil.h */,
 				78D8CDC21F1C9772005C262F /* UIImage+GKUtil.m */,
-				78D8CDC41F1C9E49005C262F /* CALayer+Util.h */,
-				78D8CDC51F1C9E49005C262F /* CALayer+Util.m */,
+				78D8CDC41F1C9E49005C262F /* CALayer+GKUtil.h */,
+				78D8CDC51F1C9E49005C262F /* CALayer+GKUtil.m */,
+				78D8CE291F21A6F4005C262F /* UIButton+GKUtil.h */,
+				78D8CE2A1F21A6F4005C262F /* UIButton+GKUtil.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -723,7 +728,7 @@
 				78D8CE021F1DFBAF005C262F /* MJRefreshFooter.m in Sources */,
 				78D8CE0E1F1DFBAF005C262F /* MJRefreshConst.m in Sources */,
 				78D8CDAF1F1C67FE005C262F /* CustomIOSAlertView.m in Sources */,
-				78D8CDC61F1C9E49005C262F /* CALayer+Util.m in Sources */,
+				78D8CDC61F1C9E49005C262F /* CALayer+GKUtil.m in Sources */,
 				78D8CE1F1F1F6BDD005C262F /* GKMainTabViewController.m in Sources */,
 				78D8CDB21F1C6C8C005C262F /* NSNotificationCenter+GKUtil.m in Sources */,
 				78D8CDBE1F1C9723005C262F /* HSDownloadManager.m in Sources */,
@@ -735,7 +740,7 @@
 				78D8CE191F1E0475005C262F /* DMShiningHeader.m in Sources */,
 				78D8CE061F1DFBAF005C262F /* MJRefreshAutoStateFooter.m in Sources */,
 				78D8CE091F1DFBAF005C262F /* MJRefreshBackStateFooter.m in Sources */,
-				78D8CD8C1F1C6646005C262F /* UIView+Frame.m in Sources */,
+				78D8CD8C1F1C6646005C262F /* UIView+GKUtil.m in Sources */,
 				78D8CE081F1DFBAF005C262F /* MJRefreshBackNormalFooter.m in Sources */,
 				78D8CE0C1F1DFBAF005C262F /* MJRefreshStateHeader.m in Sources */,
 				78D8CE001F1DFBAF005C262F /* MJRefreshBackFooter.m in Sources */,
@@ -767,6 +772,7 @@
 				78D8CDCF1F1DAF67005C262F /* YYClassInfo.m in Sources */,
 				78D8CE0F1F1DFBAF005C262F /* NSBundle+MJRefresh.m in Sources */,
 				7852CBC51F1712E8007FFD0C /* main.m in Sources */,
+				78D8CE2B1F21A6F4005C262F /* UIButton+GKUtil.m in Sources */,
 				78D8CE011F1DFBAF005C262F /* MJRefreshComponent.m in Sources */,
 				78D8CE251F204CD6005C262F /* TestTableViewController.m in Sources */,
 				78D8CDBF1F1C9723005C262F /* HSSessionModel.m in Sources */,

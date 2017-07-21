@@ -118,6 +118,7 @@
     [backButton setBackgroundColor:[UIColor clearColor]];
     [backButton setImage:image forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
+    backButton.imageEdgeInsets=UIEdgeInsetsMake(0,-16, 0, 0);
     backButton.frame = CGRectMake(0, 0, 40 + image.size.width, 45);
     
     

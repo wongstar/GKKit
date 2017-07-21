@@ -414,5 +414,87 @@
     return str;
 }
 
+-(BOOL)isNullString:(NSString *)string
+{
+    
+    if (string!=nil&&![@"" isEqualToString:string]&&![[NSNull null] isEqual:string]&&
+        ![@"NULL" isEqualToString:string]&&![@"null" isEqualToString:string]) {
+        return false;
+    }
+    
+    return true;
+}
+
+- (NSString *)RMBString
+{
+    if ([NSString isNullString:self]) {
+        return @"¥ 0.0";
+    }
+    
+    return [NSString stringWithFormat:@"¥ %@",self];
+}
+
++(NSString *)dictionryToString:(NSDictionary*)dict{
+    
+    NSError * err;
+    NSData * jsonData = [NSJSONSerialization  dataWithJSONObject:dict options:0 error:&err];
+    NSString * myString=nil;
+    if(err==nil){
+        myString= [[NSString alloc] initWithData:jsonData   encoding:NSUTF8StringEncoding];
+    }
+    return myString;
+}
+
++(int)transformaToInt:(NSString *)value{
+    NSString * temp10 = [NSString stringWithFormat:@"%lu",strtoul([value UTF8String],0,16)];
+    return  [temp10 intValue];
+}
+
++(NSString*)transformToString:(NSData*)data
+{
+    Byte *byte = (Byte* )[data bytes];
+    NSString *hexStr=@"";
+    for(int i=0;i<[data length];i++)
+    {
+        NSString *newHexStr = [NSString stringWithFormat:@"%X",byte[i]&0xFF]; ///16进制数
+        if([newHexStr length]==1)
+            hexStr = [NSString stringWithFormat:@"%@0%@",hexStr,newHexStr];
+        else
+            hexStr = [NSString stringWithFormat:@"%@%@",hexStr,newHexStr];
+    }
+    return hexStr;
+}
+
+#pragma string hexadecimal hexstring convert to decimal string 1 Byte
++ (NSString*)transformToDecimalWithString:(NSString*)string
+{
+    int int_c = 0;
+    int charCount = [string length];
+    for (int i=0; i< charCount; i++) {
+        int int_ch;
+        char tempChar = [string characterAtIndex:i];
+        if(tempChar >= '0' && tempChar <='9')
+            int_ch = (tempChar-48)*powf(16,(charCount-i-1)) ;   //// 0 的Ascll - 48
+        else if(tempChar >= 'A' && tempChar <='F')
+            int_ch = (tempChar-55)*powf(16,(charCount-i-1)); //// A 的Ascll - 65
+        else
+            int_ch = (tempChar-87)*powf(16,(charCount-i-1)); //// a 的Ascll - 97
+        int_c = int_c+int_ch;
+    }
+    if (int_c<10) {
+        return [NSString stringWithFormat:@"0%d",int_c];
+    }else{
+        return [NSString stringWithFormat:@"%d",int_c];
+    }
+}
+
++(float)getStringHeight:(NSString *)titleString withFont:(UIFont *)font{
+    return roundf([titleString sizeWithFont:font].height);
+}
+
+
++(float)getStringWidth:(NSString *)titleString withFont:(UIFont *)font{
+    return roundf([titleString sizeWithFont:font].width);
+}
 
 @end

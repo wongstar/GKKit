@@ -10,7 +10,8 @@
 #import "GKComponent.h"
 #import "UIImage+GKUtil.h"
 #import "TestBaseViewController.h"
-
+#import "GKKit.h"
+#import "TestTableViewController.h"
 
 @interface ViewController ()
 
@@ -21,27 +22,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //UIButton *imageView=[[UIImageView alloc] initWithImage: [GKComponent gkGetImageByName:@"tab_btn_add"]];
-    //imageView.frame=CGRectMake(100, 100, 30, 30);
-    //[self.view addSubview:imageView];
-    
     UIButton *button=[[UIButton alloc] initWithFrame:CGRectMake(100, 100, 100, 30)];
     [button setImage:[UIImage imageNamedWithGK:@"tab_btn_add"] forState:UIControlStateNormal];
     [button addTarget:self action:@selector(gotoAddView) forControlEvents:UIControlEventTouchUpInside];
     
+    [button setTitle:@"Test BaseViewContrller" forState:UIControlStateNormal];
     
-//    UIImage *image=[UIImage imageNamedWithGK:@"tab_btn_add"];
-//    UIImageView *imageView=[[UIImageView alloc] initWithFrame:CGRectMake(200, 200, 30, 30)];
-//    imageView.image=image;
-//    
-//    [self.view addSubview:imageView];
+    [button textLayoutImageBelow:20];
+
     
     [self.view addSubview:button];
     
-    //NSArray *arr=[]
-//    NSString *value=[GKComponent gkLocalizedStringForKey:@"name"];
-//    NSLog(@"the value is%@",value);
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    UIButton *button1=[[UIButton alloc] initWithFrame:CGRectMake(100, 200, 160, 30)];
+    [button1 setImage:[UIImage imageNamedWithGK:@"tab_btn_add"] forState:UIControlStateNormal];
+    [button1 addTarget:self action:@selector(gotoTableView) forControlEvents:UIControlEventTouchUpInside];
+    
+    [button1 setTitle:@"Test TableView" forState:UIControlStateNormal];
+    
+    [button1 textLayoutImageLeft:20];
+    
+    
+    [self.view addSubview:button1];
+
+    
+    
+    
+}
+
+-(void)gotoTableView{
+    TestTableViewController *table=[[TestTableViewController alloc] init];
+    [table hideToolBar];
+    
+    [self pushViewController:table];
 }
 
 -(void)gotoAddView{

@@ -1,7 +1,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIView (Frame)
+@interface UIView (GKUtil)
 
 @property (nonatomic) CGFloat top;
 @property (nonatomic) CGFloat bottom;

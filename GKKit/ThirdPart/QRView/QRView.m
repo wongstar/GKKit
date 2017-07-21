@@ -9,7 +9,7 @@
 #import "QRView.h"
 #import "GKUIFactory.h"
 #import "GKKitMacro.h"
-#import "UIView+Frame.h"
+
 
 
 static NSTimeInterval kQrLineanimateDuration = 0.02;

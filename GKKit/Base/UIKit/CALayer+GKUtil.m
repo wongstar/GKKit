@@ -6,9 +6,9 @@
 //  Copyright © 2017年 star. All rights reserved.
 //
 
-#import "CALayer+Util.h"
+#import "CALayer+GKUtil.h"
 
-@implementation CALayer (Util)
+@implementation CALayer (GKUtil)
 
 
 - (UIImage *)snapshotImage {

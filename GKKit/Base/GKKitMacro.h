@@ -16,10 +16,11 @@
 #import "NSNumber+GKUtil.h"
 #import "NSTimer+GKUtil.h"
 #import "NSNotificationCenter+GKUtil.h"
-#import "CALayer+Util.h"
-#import "UIView+Frame.h"
+#import "CALayer+GKUtil.h"
+#import "UIView+GKUtil.h"
 #import "UIColor+GKUtil.h"
 #import "UIImage+GKUtil.h"
+#import "UIButton+GKUtil.h"
 
 #ifdef DEBUG
 #define debugLog(...) NSLog(__VA_ARGS__)
@@ -41,6 +42,18 @@ _sharedInstance = [[self alloc] init];              \
 });                                                     \
 return _sharedInstance;                                 \
 }
+
+
+
+#define WeakSelf(type)  __weak typeof(type) weak##type = type
+#define StrongSelf(type)  __strong typeof(type) type = weak##type
+
+#define GetImage(imageName) [UIImage imageNamed:[NSString stringWithFormat:@"%@",imageName]]
+
+#define NOTIF_ADD(n, f)     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(f) name:n object:nil]
+#define NOTIF_POST(n, o)    [[NSNotificationCenter defaultCenter] postNotificationName:n object:o]
+#define NOTIF_REMV()        [[NSNotificationCenter defaultCenter] removeObserver:self]
+
 
 
 #define GKAssertNil(condition, description, ...) NSAssert(!(condition), (description), ##__VA_ARGS__)

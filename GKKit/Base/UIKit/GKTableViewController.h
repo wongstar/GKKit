@@ -20,16 +20,32 @@
 @property (nonatomic,strong) NSMutableArray *refreshImages;//刷新动画的图片数组
 @property (nonatomic,strong) NSMutableArray *normalImages;//普通状态下的图片数组
 
+
+@property (nonatomic,assign)NSInteger currentPage;
+
 - (id)initWithStyle:(UITableViewStyle)style;
 
 
+/**
+  reload tableview...
+ */
 - (void)reloadData;
 
 
 //override
 - (BOOL)isLoadMoreViewNeeded;
 
+/**
+ pull to refresh more
+ */
 - (void)pullToRefresh;
+
+//load more will call back..
 - (void)loadMore;
 
+
+/**
+ end refresh...
+ */
+-(void)endRefresh;
 @end

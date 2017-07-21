@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface CALayer (Util)
+@interface CALayer (GKUtil)
 
 - (UIImage *)snapshotImage;
 - (NSData *)snapshotPDF;
