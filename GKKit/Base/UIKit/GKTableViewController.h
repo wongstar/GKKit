@@ -40,10 +40,15 @@
  */
 - (void)pullToRefresh;
 
-//load more will call back..
+/**load more will call back..
+ */
 - (void)loadMore;
 
 
+/**
+ header end refresh
+ */
+-(void)headerEndFrefreshing;
 /**
  end refresh...
  */

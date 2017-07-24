@@ -74,7 +74,7 @@
         if (_isGifHeader){
             [weakSelf addHeader];
         }else{
-            self.baseTableView.mj_header = [MJRefreshHeader headerWithRefreshingBlock:^{
+            self.baseTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
                 [weakSelf pullToRefresh];
             }];
         }

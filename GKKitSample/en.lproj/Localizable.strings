@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  GKKitSample
+
+  Created by gk on 2017/7/24.
+  Copyright © 2017年 star. All rights reserved.
+*/
+
+"tab_one_title"="Sample List";
+"tab_two_title"="Category";
+"tab_three_title"="Videos";
+"tab_four_title"="About Us";

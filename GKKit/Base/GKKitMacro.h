@@ -21,6 +21,7 @@
 #import "UIColor+GKUtil.h"
 #import "UIImage+GKUtil.h"
 #import "UIButton+GKUtil.h"
+#import "UILabel+Util.h"
 
 #ifdef DEBUG
 #define debugLog(...) NSLog(__VA_ARGS__)
@@ -123,6 +124,8 @@ view.userInteractionEnabled = YES;\
 #define MoveTo(view, x, y)          view.frame = CGRectMake(x, y, view.frame.size.width, view.frame.size.height)
 
 #define colorFromRGB(rgbValue) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
+#define gkColorFromRGBA(r,g,b,a) [UIColor colorWithRed:r/255.0 green:g/255.0 blue:b/255.0 alpha:a]
 
 #define colorFromRGBA(rgbValue,trans) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:trans]
 
@@ -276,14 +279,39 @@ static inline void dispatch_sync_on_main_queue(void (^block)()) {
 }
 
 
-//void param
+/**
+   -------------start block code------------------------
+ */
+
+
+/**
+ this block return void and param is void.
+ */
 typedef void (^GKVoidBlock)(void);
-//obj param
+
+
+
+/**
+ this block return void and add a param object.
+
+ @param  object
+ */
 typedef void (^GKActionBlock)(id object);
+
+
+
 //sender self, obj param.
 typedef void (^GKActionWithBlock)(id sender,id obj);
+
+
+
 //complet
 typedef void (^GKActionCompletionBlock)(id object,NSError *error);
+
+
+/*
+ --------------------end block code---------------------
+ */
 
 #endif /* GKKitMacro_h */
 

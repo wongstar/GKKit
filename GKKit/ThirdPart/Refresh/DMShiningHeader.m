@@ -24,7 +24,7 @@
 {
     if (_normalImages == nil) {
         _normalImages = [[NSMutableArray alloc] init];
-        for (NSUInteger i = 1; i<=6; i++) {
+        for (NSUInteger i = 1; i<=60; i++) {
             
             UIImage *image = [NSBundle imageFromGKBundleByName:[NSString stringWithFormat:@"dropdown_anim__000%zd", i]];
             [_normalImages addObject:image];
@@ -41,9 +41,9 @@
         _refreshImages = [[NSMutableArray alloc] init];
         
         //循环添加图片
-        for (NSUInteger i = 1; i<=7; i++) {
+        for (NSUInteger i = 1; i<=3; i++) {
             UIImage *image = [NSBundle imageFromGKBundleByName:[NSString stringWithFormat:@"dropdown_loading_000%zd", i]];
-            [self.refreshImages addObject:image];
+            [_refreshImages addObject:image];
         }
     }
     return _refreshImages;

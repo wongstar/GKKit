@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		782ACDA41F2595D6002BF20C /* UILabel+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACDA31F2595D6002BF20C /* UILabel+Util.m */; };
+		782ACDA61F25CCB5002BF20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782ACDA51F25CCB5002BF20C /* Assets.xcassets */; };
+		782ACE631F25F5D0002BF20C /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE621F25F5D0002BF20C /* AboutMeViewController.m */; };
+		782ACE661F25F68D002BF20C /* SampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE651F25F68D002BF20C /* SampleListViewController.m */; };
+		782ACE691F25FBE3002BF20C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 782ACE6B1F25FBE3002BF20C /* Localizable.strings */; };
 		7852CBC51F1712E8007FFD0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBC41F1712E8007FFD0C /* main.m */; };
 		7852CBC81F1712E8007FFD0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBC71F1712E8007FFD0C /* AppDelegate.m */; };
 		7852CBCB1F1712E8007FFD0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBCA1F1712E8007FFD0C /* ViewController.m */; };
 		7852CBCE1F1712E8007FFD0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7852CBCC1F1712E8007FFD0C /* Main.storyboard */; };
 		7852CBD11F1712E8007FFD0C /* GKKitSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBCF1F1712E8007FFD0C /* GKKitSample.xcdatamodeld */; };
-		7852CBD31F1712E8007FFD0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7852CBD21F1712E8007FFD0C /* Assets.xcassets */; };
 		7852CBD61F1712E8007FFD0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7852CBD41F1712E8007FFD0C /* LaunchScreen.storyboard */; };
 		7852CBE11F1712E8007FFD0C /* GKKitSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBE01F1712E8007FFD0C /* GKKitSampleTests.m */; };
 		78D8CD881F1C6646005C262F /* GKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD5E1F1C6646005C262F /* GKBaseViewController.m */; };
@@ -68,7 +72,7 @@
 		78D8CE191F1E0475005C262F /* DMShiningHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE171F1E0475005C262F /* DMShiningHeader.m */; };
 		78D8CE1C1F1F0E58005C262F /* GKFadeNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE1B1F1F0E58005C262F /* GKFadeNavigationController.m */; };
 		78D8CE1F1F1F6BDD005C262F /* GKMainTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */; };
-		78D8CE251F204CD6005C262F /* TestTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE241F204CD6005C262F /* TestTableViewController.m */; };
+		78D8CE251F204CD6005C262F /* TestGifTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE241F204CD6005C262F /* TestGifTableViewController.m */; };
 		78D8CE281F204E47005C262F /* TestBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE271F204E47005C262F /* TestBaseViewController.m */; };
 		78D8CE2B1F21A6F4005C262F /* UIButton+GKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE2A1F21A6F4005C262F /* UIButton+GKUtil.m */; };
 /* End PBXBuildFile section */
@@ -84,6 +88,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		782ACDA21F2595D6002BF20C /* UILabel+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Util.h"; sourceTree = "<group>"; };
+		782ACDA31F2595D6002BF20C /* UILabel+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Util.m"; sourceTree = "<group>"; };
+		782ACDA51F25CCB5002BF20C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		782ACE611F25F5D0002BF20C /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
+		782ACE621F25F5D0002BF20C /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
+		782ACE641F25F68D002BF20C /* SampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleListViewController.h; path = ../GKKit/SampleListViewController.h; sourceTree = "<group>"; };
+		782ACE651F25F68D002BF20C /* SampleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleListViewController.m; path = ../GKKit/SampleListViewController.m; sourceTree = "<group>"; };
+		782ACE6A1F25FBE3002BF20C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		782ACE6C1F25FBEA002BF20C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7852CBC01F1712E8007FFD0C /* GKKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7852CBC41F1712E8007FFD0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7852CBC61F1712E8007FFD0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -92,7 +105,6 @@
 		7852CBCA1F1712E8007FFD0C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7852CBCD1F1712E8007FFD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7852CBD01F1712E8007FFD0C /* GKKitSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GKKitSample.xcdatamodel; sourceTree = "<group>"; };
-		7852CBD21F1712E8007FFD0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7852CBD51F1712E8007FFD0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7852CBD71F1712E8007FFD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7852CBDC1F1712E8007FFD0C /* GKKitSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKKitSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -205,8 +217,8 @@
 		78D8CE1B1F1F0E58005C262F /* GKFadeNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKFadeNavigationController.m; sourceTree = "<group>"; };
 		78D8CE1D1F1F6BDD005C262F /* GKMainTabViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKMainTabViewController.h; sourceTree = "<group>"; };
 		78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKMainTabViewController.m; sourceTree = "<group>"; };
-		78D8CE231F204CD6005C262F /* TestTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestTableViewController.h; sourceTree = "<group>"; };
-		78D8CE241F204CD6005C262F /* TestTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestTableViewController.m; sourceTree = "<group>"; };
+		78D8CE231F204CD6005C262F /* TestGifTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestGifTableViewController.h; sourceTree = "<group>"; };
+		78D8CE241F204CD6005C262F /* TestGifTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestGifTableViewController.m; sourceTree = "<group>"; };
 		78D8CE261F204E47005C262F /* TestBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestBaseViewController.h; sourceTree = "<group>"; };
 		78D8CE271F204E47005C262F /* TestBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBaseViewController.m; sourceTree = "<group>"; };
 		78D8CE291F21A6F4005C262F /* UIButton+GKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GKUtil.h"; sourceTree = "<group>"; };
@@ -261,11 +273,15 @@
 				78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */,
 				78D8CE261F204E47005C262F /* TestBaseViewController.h */,
 				78D8CE271F204E47005C262F /* TestBaseViewController.m */,
-				78D8CE231F204CD6005C262F /* TestTableViewController.h */,
-				78D8CE241F204CD6005C262F /* TestTableViewController.m */,
+				782ACE641F25F68D002BF20C /* SampleListViewController.h */,
+				782ACE651F25F68D002BF20C /* SampleListViewController.m */,
+				78D8CE231F204CD6005C262F /* TestGifTableViewController.h */,
+				78D8CE241F204CD6005C262F /* TestGifTableViewController.m */,
+				782ACE611F25F5D0002BF20C /* AboutMeViewController.h */,
+				782ACE621F25F5D0002BF20C /* AboutMeViewController.m */,
 				7852CBCC1F1712E8007FFD0C /* Main.storyboard */,
-				7852CBD21F1712E8007FFD0C /* Assets.xcassets */,
 				7852CBD41F1712E8007FFD0C /* LaunchScreen.storyboard */,
+				782ACDA51F25CCB5002BF20C /* Assets.xcassets */,
 				7852CBD71F1712E8007FFD0C /* Info.plist */,
 				7852CBCF1F1712E8007FFD0C /* GKKitSample.xcdatamodeld */,
 				7852CBC31F1712E8007FFD0C /* Supporting Files */,
@@ -276,6 +292,7 @@
 		7852CBC31F1712E8007FFD0C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				782ACE6B1F25FBE3002BF20C /* Localizable.strings */,
 				7852CBC41F1712E8007FFD0C /* main.m */,
 			);
 			name = "Supporting Files";
@@ -337,6 +354,8 @@
 				78D8CDC51F1C9E49005C262F /* CALayer+GKUtil.m */,
 				78D8CE291F21A6F4005C262F /* UIButton+GKUtil.h */,
 				78D8CE2A1F21A6F4005C262F /* UIButton+GKUtil.m */,
+				782ACDA21F2595D6002BF20C /* UILabel+Util.h */,
+				782ACDA31F2595D6002BF20C /* UILabel+Util.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -698,10 +717,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7852CBD61F1712E8007FFD0C /* LaunchScreen.storyboard in Resources */,
-				7852CBD31F1712E8007FFD0C /* Assets.xcassets in Resources */,
+				782ACE691F25FBE3002BF20C /* Localizable.strings in Resources */,
 				7852CBCE1F1712E8007FFD0C /* Main.storyboard in Resources */,
 				78D8CE0D1F1DFBAF005C262F /* MJRefresh.bundle in Resources */,
 				78D8CD8D1F1C6646005C262F /* GKResource.bundle in Resources */,
+				782ACDA61F25CCB5002BF20C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -724,6 +744,7 @@
 				78D8CDA31F1C6673005C262F /* NSDate+GKUtil.m in Sources */,
 				7852CBD11F1712E8007FFD0C /* GKKitSample.xcdatamodeld in Sources */,
 				78D8CD881F1C6646005C262F /* GKBaseViewController.m in Sources */,
+				782ACE661F25F68D002BF20C /* SampleListViewController.m in Sources */,
 				78D8CDA41F1C6673005C262F /* NSNumber+GKUtil.m in Sources */,
 				78D8CE021F1DFBAF005C262F /* MJRefreshFooter.m in Sources */,
 				78D8CE0E1F1DFBAF005C262F /* MJRefreshConst.m in Sources */,
@@ -742,6 +763,7 @@
 				78D8CE091F1DFBAF005C262F /* MJRefreshBackStateFooter.m in Sources */,
 				78D8CD8C1F1C6646005C262F /* UIView+GKUtil.m in Sources */,
 				78D8CE081F1DFBAF005C262F /* MJRefreshBackNormalFooter.m in Sources */,
+				782ACDA41F2595D6002BF20C /* UILabel+Util.m in Sources */,
 				78D8CE0C1F1DFBAF005C262F /* MJRefreshStateHeader.m in Sources */,
 				78D8CE001F1DFBAF005C262F /* MJRefreshBackFooter.m in Sources */,
 				78D8CD911F1C6646005C262F /* GKComponent.m in Sources */,
@@ -752,6 +774,7 @@
 				78D8CDA61F1C6673005C262F /* NSTimer+GKUtil.m in Sources */,
 				78D8CE1C1F1F0E58005C262F /* GKFadeNavigationController.m in Sources */,
 				78D8CD8E1F1C6646005C262F /* QRItem.m in Sources */,
+				782ACE631F25F5D0002BF20C /* AboutMeViewController.m in Sources */,
 				7852CBCB1F1712E8007FFD0C /* ViewController.m in Sources */,
 				7852CBC81F1712E8007FFD0C /* AppDelegate.m in Sources */,
 				78D8CD921F1C6646005C262F /* GKUIFactory.m in Sources */,
@@ -774,7 +797,7 @@
 				7852CBC51F1712E8007FFD0C /* main.m in Sources */,
 				78D8CE2B1F21A6F4005C262F /* UIButton+GKUtil.m in Sources */,
 				78D8CE011F1DFBAF005C262F /* MJRefreshComponent.m in Sources */,
-				78D8CE251F204CD6005C262F /* TestTableViewController.m in Sources */,
+				78D8CE251F204CD6005C262F /* TestGifTableViewController.m in Sources */,
 				78D8CDBF1F1C9723005C262F /* HSSessionModel.m in Sources */,
 				78D8CDC31F1C9772005C262F /* UIImage+GKUtil.m in Sources */,
 			);
@@ -799,6 +822,15 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		782ACE6B1F25FBE3002BF20C /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				782ACE6A1F25FBE3002BF20C /* en */,
+				782ACE6C1F25FBEA002BF20C /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		7852CBCC1F1712E8007FFD0C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -914,6 +946,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DSEGUA2LJT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -940,6 +973,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DSEGUA2LJT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

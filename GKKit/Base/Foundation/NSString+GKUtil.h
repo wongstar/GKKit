@@ -405,4 +405,16 @@
 
 +(float)getStringWidth:(NSString *)titleString withFont:(UIFont *)font;
 
+/**
+ 验证【身份证】
+ */
+-(BOOL)isIDCard;
+
+/**
+ 验证【手机号】
+ */
+-(BOOL)isPhoneNumber;
+
+
+
 @end

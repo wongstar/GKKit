@@ -118,7 +118,7 @@
     [backButton setBackgroundColor:[UIColor clearColor]];
     [backButton setImage:image forState:UIControlStateNormal];
     [backButton addTarget:self action:@selector(back) forControlEvents:UIControlEventTouchUpInside];
-    backButton.imageEdgeInsets=UIEdgeInsetsMake(0,-16, 0, 0);
+    backButton.imageEdgeInsets=UIEdgeInsetsMake(0,-46, 0, 0);
     backButton.frame = CGRectMake(0, 0, 40 + image.size.width, 45);
     
     
@@ -142,7 +142,7 @@
         UIImage *image=[UIImage imageNamedWithGK:@"icon_back_white"];
         return image;
     }else if(GKNaviBarStyleDefault==gkNaviBarStyle){
-        UIImage *image=[UIImage imageNamedWithGK:@"black_back_icon"];
+        UIImage *image=[UIImage imageNamedWithGK:@"icon_back_white"];
         
          return image;
     }else if(GKNaviBarStyleOther==gkNaviBarStyle) {

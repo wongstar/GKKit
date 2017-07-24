@@ -11,7 +11,6 @@
 #import "UIImage+GKUtil.h"
 #import "TestBaseViewController.h"
 #import "GKKit.h"
-#import "TestTableViewController.h"
 
 @interface ViewController ()
 
@@ -52,10 +51,10 @@
 }
 
 -(void)gotoTableView{
-    TestTableViewController *table=[[TestTableViewController alloc] init];
-    [table hideToolBar];
-    
-    [self pushViewController:table];
+//    TestTableViewController *table=[[TestTableViewController alloc] init];
+//    [table hideToolBar];
+//    
+//    [self pushViewController:table];
 }
 
 -(void)gotoAddView{

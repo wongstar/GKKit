@@ -8,7 +8,11 @@
 
 #import "GKMainTabViewController.h"
 #import "ViewController.h"
+#import "GKKit.h"
 #import "GKUINavigationController.h"
+#import "SampleListViewController.h"
+#import "AboutMeViewController.h"
+
 
 @interface GKMainTabViewController ()
 
@@ -20,19 +24,20 @@
     [super viewDidLoad];
     
     
-    ViewController *one=[[ViewController alloc] init];
-    one.title=@"one";
-    one.navigationBarHidden=YES;
-    one.backgroundColor=[UIColor greenColor];
+    
+    SampleListViewController *one=[[SampleListViewController alloc] init];
+    one.title=@"Sample List";
+    one.navigationBarHidden=NO;
+    //one.backgroundColor=[UIColor grayColor];
     
     GKUINavigationController *oneNavi=[[GKUINavigationController alloc] initWithRootViewController:one];
-    
-    
+    [one setTitleColor:[UIColor whiteColor]];
+    [oneNavi showNavigationBarColor:gkColorFromRGBA(244, 89, 27,1)];
     
     ViewController *two=[[ViewController alloc] init];
     two.title=@"two";
     two.navigationBarHidden=YES;
-    two.backgroundColor=[UIColor blueColor];
+    two.backgroundColor=[UIColor grayColor];
     
     GKUINavigationController *twoNavi=[[GKUINavigationController alloc] initWithRootViewController:two];
     
@@ -56,24 +61,26 @@
     
     
     
-    ViewController *five=[[ViewController alloc] init];
-    five.title=@"five";
-    five.navigationBarHidden=YES;
-    five.backgroundColor=[UIColor greenColor];
+    AboutMeViewController *five=[[AboutMeViewController alloc] init];
+    five.title=@"关于我";
     
+    [five setTitleColor:[UIColor whiteColor]];
+   
     GKUINavigationController *fiveNavi=[[GKUINavigationController alloc] initWithRootViewController:five];
     
+    [fiveNavi showNavigationBarColor:gkColorFromRGBA(244, 89, 27,1)];
     NSArray *vc=@[oneNavi,twoNavi,threeNavi,fourNavi,fiveNavi];
+    
+    self.tabNormalImages=@[@"one",@"two",@"",@"three",@"four"];
+    self.tabSelectedImages=@[@"one_selected",@"two_selected",@"",@"three_selected",@"four_selected"];
+    self.tabTexts=@[LSTR(@"tab_one_title"),LSTR(@"tab_two_title"),LSTR(@""),LSTR(@"tab_three_title"),LSTR(@"tab_four_title")];
     
     [self initTabWithVC:vc];
     
     
-//    [self buttonInToolBarWithImage:nil withIndex:2 withBlock:^(id sender, id obj) {
-//        
-//    }];
-//    [self addCenterButtonWithBlock:^(id sender, id obj) {
-//        
-//    }];
+    [self addCenterButtonWithBlock:^(id sender, id obj) {
+        
+    }];
     // Do any additional setup after loading the view.
 }
 
