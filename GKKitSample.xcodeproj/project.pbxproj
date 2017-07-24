@@ -10,7 +10,6 @@
 		782ACDA41F2595D6002BF20C /* UILabel+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACDA31F2595D6002BF20C /* UILabel+Util.m */; };
 		782ACDA61F25CCB5002BF20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782ACDA51F25CCB5002BF20C /* Assets.xcassets */; };
 		782ACE631F25F5D0002BF20C /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE621F25F5D0002BF20C /* AboutMeViewController.m */; };
-		782ACE661F25F68D002BF20C /* SampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE651F25F68D002BF20C /* SampleListViewController.m */; };
 		782ACE691F25FBE3002BF20C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 782ACE6B1F25FBE3002BF20C /* Localizable.strings */; };
 		7852CBC51F1712E8007FFD0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBC41F1712E8007FFD0C /* main.m */; };
 		7852CBC81F1712E8007FFD0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBC71F1712E8007FFD0C /* AppDelegate.m */; };
@@ -75,6 +74,7 @@
 		78D8CE251F204CD6005C262F /* TestGifTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE241F204CD6005C262F /* TestGifTableViewController.m */; };
 		78D8CE281F204E47005C262F /* TestBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE271F204E47005C262F /* TestBaseViewController.m */; };
 		78D8CE2B1F21A6F4005C262F /* UIButton+GKUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CE2A1F21A6F4005C262F /* UIButton+GKUtil.m */; };
+		F890C02A1F26393C00CC7797 /* SampleListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F890C0291F26393C00CC7797 /* SampleListViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,8 +93,6 @@
 		782ACDA51F25CCB5002BF20C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782ACE611F25F5D0002BF20C /* AboutMeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutMeViewController.h; sourceTree = "<group>"; };
 		782ACE621F25F5D0002BF20C /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
-		782ACE641F25F68D002BF20C /* SampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SampleListViewController.h; path = ../GKKit/SampleListViewController.h; sourceTree = "<group>"; };
-		782ACE651F25F68D002BF20C /* SampleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SampleListViewController.m; path = ../GKKit/SampleListViewController.m; sourceTree = "<group>"; };
 		782ACE6A1F25FBE3002BF20C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		782ACE6C1F25FBEA002BF20C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		7852CBC01F1712E8007FFD0C /* GKKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -223,6 +221,8 @@
 		78D8CE271F204E47005C262F /* TestBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestBaseViewController.m; sourceTree = "<group>"; };
 		78D8CE291F21A6F4005C262F /* UIButton+GKUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+GKUtil.h"; sourceTree = "<group>"; };
 		78D8CE2A1F21A6F4005C262F /* UIButton+GKUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+GKUtil.m"; sourceTree = "<group>"; };
+		F890C0281F26393C00CC7797 /* SampleListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SampleListViewController.h; sourceTree = "<group>"; };
+		F890C0291F26393C00CC7797 /* SampleListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SampleListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -273,10 +273,10 @@
 				78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */,
 				78D8CE261F204E47005C262F /* TestBaseViewController.h */,
 				78D8CE271F204E47005C262F /* TestBaseViewController.m */,
-				782ACE641F25F68D002BF20C /* SampleListViewController.h */,
-				782ACE651F25F68D002BF20C /* SampleListViewController.m */,
 				78D8CE231F204CD6005C262F /* TestGifTableViewController.h */,
 				78D8CE241F204CD6005C262F /* TestGifTableViewController.m */,
+				F890C0281F26393C00CC7797 /* SampleListViewController.h */,
+				F890C0291F26393C00CC7797 /* SampleListViewController.m */,
 				782ACE611F25F5D0002BF20C /* AboutMeViewController.h */,
 				782ACE621F25F5D0002BF20C /* AboutMeViewController.m */,
 				7852CBCC1F1712E8007FFD0C /* Main.storyboard */,
@@ -744,7 +744,7 @@
 				78D8CDA31F1C6673005C262F /* NSDate+GKUtil.m in Sources */,
 				7852CBD11F1712E8007FFD0C /* GKKitSample.xcdatamodeld in Sources */,
 				78D8CD881F1C6646005C262F /* GKBaseViewController.m in Sources */,
-				782ACE661F25F68D002BF20C /* SampleListViewController.m in Sources */,
+				F890C02A1F26393C00CC7797 /* SampleListViewController.m in Sources */,
 				78D8CDA41F1C6673005C262F /* NSNumber+GKUtil.m in Sources */,
 				78D8CE021F1DFBAF005C262F /* MJRefreshFooter.m in Sources */,
 				78D8CE0E1F1DFBAF005C262F /* MJRefreshConst.m in Sources */,

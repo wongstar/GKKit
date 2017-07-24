@@ -12,10 +12,10 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "7.0"
 
   s.source       = { :git => "https://github.com/wongstar/GKFramework.git", :tag => "#{s.version}" }
-  s.source_files = 'GKKit/**/*.{h,m}'
+  s.source_files = 'GKKit/**/*'
   s.resource     = 'GKKit/GKResource.bundle'
   s.requires_arc = true
-  s.frameworks = 'UIKit'
+  s.frameworks = 'UIKit','CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary'
   #s.public_header_files='GKFramework/Classes/**/*.h'
   #s.dependency 'AFNetworking'
 
