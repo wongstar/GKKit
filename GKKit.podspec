@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GKKit"
-  s.version      = "0.0.1"
+  s.version      = "0.0.5"
   s.summary      = "A Sample framework.so you can use it"
   s.description  = <<-DESC
                    this is gk framework, use it for test your framework. we can use it as framework.
