@@ -1,4 +1,4 @@
-###GKKit
+GKKit
 
 - An easy way to use pull-to-refresh
 - Collect a lot of useful Category.
@@ -14,7 +14,8 @@ GKResource.bundle -->put all the resource  in this bundle.
 Utils -->some utils class
 View -->custom views such as Toast
 
-###Demo Project
+
+Demo Project
 ![Screen Shot 2017-07-25 at 下午6.00.05.png](http://upload-images.jianshu.io/upload_images/2155810-8d15ed0ec0b5596e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/480)
 
 ```
@@ -55,10 +56,9 @@ add tarbar normal  list icons and selected list icons ,if you want add button in
 }
 ```
 
+Installation
 
-###Installation
-
---------
+---------------------------
 
 CocoaPods
 1.Add pod 'GKKit' to your Podfile
@@ -71,8 +71,8 @@ Manually
 3.Import <GKKit/GKKit.h>
 
 
---------
-###License
+-----------------------------
+License
 GKKit is provided under the MIT license. See LICENSE file for details.
 
 
