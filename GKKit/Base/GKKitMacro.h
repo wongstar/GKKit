@@ -218,6 +218,8 @@ sizeWithFont:font constrainedToSize:maxSize lineBreakMode:mode] : CGSizeZero;
 // 黑色
 #define     kTextColorLevel1       colorFromRGB(0x000000)
 
+#define kUseScreenShotGesture  1
+
 /**
  Returns a dispatch_time delay from now.
  */

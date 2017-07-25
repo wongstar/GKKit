@@ -9,6 +9,7 @@
 #import "NSBundle+GKUtil.h"
 #import "GKTabBarController.h"
 #import "UIColor+GKUtil.h"
+#import "GKUINavigationController.h"
 
 @interface GKTabBarController (){
     BOOL hasNormalImages;
@@ -21,7 +22,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+   
     // Do any additional setup after loading the view.
+}
+
+
+-(void)viewWillAppear:(BOOL)animated{
+//    [self.tabBar.items[2] setEnabled:false];
+//    [self.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+//        debugLog(@"the idx is %d",idx);
+//    }];
+    //debugLog(@"the count of tabar %d",self.tabBar.items.count);
+    
 }
 
 -(NSArray *)tabNormalImages{
@@ -93,9 +105,12 @@
 
     NSCAssert(!(vc.count==normalImages.count==selectedImages.count==texts.count),@"the array count must equal.");
     
+    self.viewControllers=vc;
+    
     for(int i=0;i<vc.count;i++){
         [self addChildVC:[vc objectAtIndex:i] title:[texts objectAtIndex:i] normalImage:[normalImages objectAtIndex:i] selectedImage:[selectedImages objectAtIndex:i]];
     }
+    
     
 }
 
@@ -105,9 +120,9 @@
 - (void)addChildVC:(UIViewController *)childVC title:(NSString *)title normalImage:(NSString *)normalImage selectedImage:(NSString *)selectedImage
 {
     
+
     childVC.tabBarItem.title = title;
- 
-    
+     
     if(!hasNormalImages){
         childVC.tabBarItem.image = [UIImage imageNamedWithGK:normalImage];
     }else{
@@ -123,16 +138,18 @@
     
     [childVC.tabBarItem setTitleTextAttributes:self.textAttrs forState:UIControlStateNormal];
     [childVC.tabBarItem setTitleTextAttributes:self.selectTextAttrs forState:UIControlStateSelected];
-    [self addChildViewController:childVC];
+    
 }
 
--(void)set
-{
-    [self.tabBar.items[3] setImage:[[UIImage imageNamed:@"tab_btn_activity_notification"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
-}
+
 
 
 -(void)buttonInToolBarWithNormalImage:(NSString *)normal withSelectedImage:(NSString *)selected withIndex:(NSInteger)index withBlock:(GKActionWithBlock)block{
+    
+    
+    self.tabBar.items[index].enabled=false;
+    //debugLog(@"the tabBar.item")
+    
     NSInteger count =_tabNormalImages.count;
     GKAssertNil(count==0, @"tabBar count must large zero");
     float width = self.tabBar.width;
@@ -169,14 +186,12 @@
     [button addTarget:self action:@selector(centerButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     
     [self.tabBar addSubview:button];
-
+    
 }
 
 
 -(void)addCenterButtonWithBlock:(GKActionWithBlock)block{
-    [self addCenterButtonWithNormalImage:nil withSeletedImageName:nil witchBlock:^(id sender, id obj) {
-        
-    }];
+    [self addCenterButtonWithNormalImage:nil withSeletedImageName:nil witchBlock:block];
 }
 
 -(void)addCenterButtonWithNormalImage:(NSString *)normlName  withSeletedImageName:(NSString *)selectedImageName witchBlock:(GKActionWithBlock)block
@@ -185,9 +200,7 @@
     NSInteger count =_tabNormalImages.count;
     GKAssertNil(count==0, @"tabBar count must large zero");
     
-    [self buttonInToolBarWithNormalImage:normlName withSelectedImage:selectedImageName withIndex:count/2 withBlock:^(id sender, id obj) {
-        
-    }];
+    [self buttonInToolBarWithNormalImage:normlName withSelectedImage:selectedImageName withIndex:count/2 withBlock:block];
 }
 
 

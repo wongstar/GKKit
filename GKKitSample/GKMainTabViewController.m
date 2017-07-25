@@ -46,11 +46,11 @@
     ViewController *three=[[ViewController alloc] init];
     three.title=@"three";
     three.navigationBarHidden=YES;
-    three.backgroundColor=[UIColor grayColor];
+    three.backgroundColor=[UIColor whiteColor];
     
     GKUINavigationController *threeNavi=[[GKUINavigationController alloc] initWithRootViewController:three];
     
-    
+    threeNavi.navType=GKNavigationCenter;
     
     ViewController *four=[[ViewController alloc] init];
     four.title=@"four";
@@ -79,7 +79,7 @@
     
     
     [self addCenterButtonWithBlock:^(id sender, id obj) {
-        
+        debugLog(@".... click...");
     }];
     // Do any additional setup after loading the view.
 }

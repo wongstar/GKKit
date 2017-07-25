@@ -17,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navType=GKNavigationNormal;
     // Do any additional setup after loading the view.
 }
 

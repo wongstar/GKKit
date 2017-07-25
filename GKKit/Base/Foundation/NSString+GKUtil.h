@@ -410,6 +410,32 @@
  */
 -(BOOL)isIDCard;
 
+//判断字符数(判断字符串为6～12位“字符”)
++ (BOOL)isValidateName:(NSString *)name;
+
+//判断邮箱号//如果符合邮箱格式，返回YES
++(BOOL)isValidateEmail:(NSString *)email;
+
+//判断密码为6～20位字符
++(BOOL)isValidatePassword:(NSString *)password;
+
+//判断手机格式
++ (BOOL)checkTel:(NSString *)str;
+//手机号码验证
++ (BOOL) validateMobile:(NSString *)mobile;
+//判断邮编格式为6位数字
++ (BOOL)checkPostCode:(NSString *)str;
+//判断银行卡号正确不
++(BOOL) checkUnionpayCardNo:(NSString*) cardNo;
+
+#pragma 正则匹配用户身份证号15或18位
++ (BOOL)checkUserIdCard: (NSString *) idCard;
+
++ (BOOL) validateIdentityCard: (NSString *)identityCard;
+
++(NSString *)digitUppercaseWithMoney:(NSString *)money;
+
++(BOOL) checkUnionpayCardNo:(NSString*) cardNo;
 /**
  验证【手机号】
  */
