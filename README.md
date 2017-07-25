@@ -14,7 +14,7 @@ GKResource.bundle -->put all the resource  in this bundle.
 Utils -->some utils class
 View -->custom views such as Toast
 
----------------------------
+
 Demo Project
 ---
 ![Screen Shot 2017-07-25 at 下午6.00.05.png](http://upload-images.jianshu.io/upload_images/2155810-8d15ed0ec0b5596e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/480)
@@ -60,20 +60,19 @@ add tarbar normal  list icons and selected list icons ,if you want add button in
 Installation
 ---
 
----------------------------
+
 
 CocoaPods
-1.Add pod 'GKKit' to your Podfile
-2.Run pod install or pod update.
-3.Import <GKKit/GKKit.h>
+- Add pod 'GKKit' to your Podfile
+- Run pod install or pod update.
+- Import <GKKit/GKKit.h>
 
 Manually
-1.Download all the files in the 'GKKit' subdirectory.
-2.Add the source files to your Xcode project.
-3.Import <GKKit/GKKit.h>
+- Download all the files in the 'GKKit' subdirectory.
+- Add the source files to your Xcode project.
+- Import <GKKit/GKKit.h>
 
 
------------------------------
 License
 ---
 GKKit is provided under the MIT license. See LICENSE file for details.
