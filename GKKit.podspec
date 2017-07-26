@@ -16,28 +16,28 @@ Pod::Spec.new do |s|
   s.public_header_files='GKKit/GKKit.h'
   s.resource     = 'GKKit/GKResource.bundle'
 
-  s.subspec 'Base' do |ss|
+  s.subspec 'Class' do |ss|
     ss.source_files= 'GKKit/**/*.{h,m}'
     #ss.public_header_files='GKKit/**/*.{h}
   end
 
-  s.subspec 'Model' do |ss|
-    ss.source_files= 'GKKit/**/*.{h,m}'
+  #s.subspec 'Model' do |ss|
+   # ss.source_files= 'GKKit/**/*.{h,m}'
     #ss.public_header_files='GKKit/**/*.{h}'
-  end
+  #end
 
-  s.subspec 'Utils' do |ss|
-    ss.source_files= 'GKKit/**/*.{h,m}'
+  #s.subspec 'Utils' do |ss|
+   # ss.source_files= 'GKKit/**/*.{h,m}'
     #ss.public_header_files='GKKit/**/*.{h}'
-  end
+  #end
 
-  s.subspec 'View' do |ss|
-    ss.source_files= 'GKKit/**/*.{h,m}'
+  #s.subspec 'View' do |ss|
+   # ss.source_files= 'GKKit/**/*.{h,m}'
     #ss.public_header_files='GKKit/**/*.{h}'
-  end
+  #end
 
-  s.subspec 'ThirdPart' do |ss|
-    ss.source_files='GKKit/**/*.{h,m}'
+  s.subspec 'MJRefresh' do |ss|
+    #ss.source_files='GKKit/**/*.{h,m}'
     ss.resource ='GKKit/ThirdPart/MJRefresh/MJRefresh.bundle'
   end
 
