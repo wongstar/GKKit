@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "GKKit"
-  s.version      = "0.0.7"
+  s.version      = "0.0.8"
   s.summary      = "A Sample GKKit framework.so you can use it"
   s.description  = <<-DESC
                    this is GKKit framework, use it for test your framework. we can use it as framework.
@@ -16,38 +16,18 @@ Pod::Spec.new do |s|
   s.public_header_files='GKKit/GKKit.h'
   s.resource     = 'GKKit/GKResource.bundle'
 
-  s.subspec 'Class' do |ss|
+  s.subspec 'Classes' do |ss|
     ss.source_files= 'GKKit/**/*.{h,m}'
     #ss.public_header_files='GKKit/**/*.{h}
   end
 
-  #s.subspec 'Model' do |ss|
-   # ss.source_files= 'GKKit/**/*.{h,m}'
-    #ss.public_header_files='GKKit/**/*.{h}'
-  #end
-
-  #s.subspec 'Utils' do |ss|
-   # ss.source_files= 'GKKit/**/*.{h,m}'
-    #ss.public_header_files='GKKit/**/*.{h}'
-  #end
-
-  #s.subspec 'View' do |ss|
-   # ss.source_files= 'GKKit/**/*.{h,m}'
-    #ss.public_header_files='GKKit/**/*.{h}'
-  #end
-
-  s.subspec 'MJRefresh' do |ss|
-    #ss.source_files='GKKit/**/*.{h,m}'
+  s.subspec 'MJRefreshResource' do |ss|
     ss.resource ='GKKit/ThirdPart/MJRefresh/MJRefresh.bundle'
   end
 
-
- 
-
   s.requires_arc = true
   s.frameworks = 'UIKit','CoreFoundation', 'CoreText', 'CoreGraphics', 'CoreImage', 'QuartzCore', 'ImageIO', 'AssetsLibrary'
-  #.public_header_files='GKFramework/Classes/**/*.h'
-  #s.dependency 'AFNetworking'
 
-  
+
+
 end

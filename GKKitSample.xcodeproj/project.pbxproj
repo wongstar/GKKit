@@ -11,8 +11,6 @@
 		782ACDA61F25CCB5002BF20C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782ACDA51F25CCB5002BF20C /* Assets.xcassets */; };
 		782ACE631F25F5D0002BF20C /* AboutMeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE621F25F5D0002BF20C /* AboutMeViewController.m */; };
 		782ACE691F25FBE3002BF20C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 782ACE6B1F25FBE3002BF20C /* Localizable.strings */; };
-		782ACE731F2869BC002BF20C /* GKCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE6F1F2869BC002BF20C /* GKCover.m */; };
-		782ACE741F2869BC002BF20C /* UIView+GKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE721F2869BC002BF20C /* UIView+GKExtension.m */; };
 		7852CBC51F1712E8007FFD0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBC41F1712E8007FFD0C /* main.m */; };
 		7852CBC81F1712E8007FFD0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBC71F1712E8007FFD0C /* AppDelegate.m */; };
 		7852CBCB1F1712E8007FFD0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBCA1F1712E8007FFD0C /* ViewController.m */; };
@@ -97,11 +95,6 @@
 		782ACE621F25F5D0002BF20C /* AboutMeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutMeViewController.m; sourceTree = "<group>"; };
 		782ACE6A1F25FBE3002BF20C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		782ACE6C1F25FBEA002BF20C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
-		782ACE6E1F2869BC002BF20C /* GKCover.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCover.h; sourceTree = "<group>"; };
-		782ACE6F1F2869BC002BF20C /* GKCover.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKCover.m; sourceTree = "<group>"; };
-		782ACE701F2869BC002BF20C /* GKCoverEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCoverEnum.h; sourceTree = "<group>"; };
-		782ACE711F2869BC002BF20C /* UIView+GKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GKExtension.h"; sourceTree = "<group>"; };
-		782ACE721F2869BC002BF20C /* UIView+GKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GKExtension.m"; sourceTree = "<group>"; };
 		7852CBC01F1712E8007FFD0C /* GKKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7852CBC41F1712E8007FFD0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7852CBC61F1712E8007FFD0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -250,14 +243,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		782ACE6D1F2869BC002BF20C /* GKCover */ = {
+		782ACE751F28905D002BF20C /* GKCover */ = {
 			isa = PBXGroup;
 			children = (
-				782ACE6E1F2869BC002BF20C /* GKCover.h */,
-				782ACE6F1F2869BC002BF20C /* GKCover.m */,
-				782ACE701F2869BC002BF20C /* GKCoverEnum.h */,
-				782ACE711F2869BC002BF20C /* UIView+GKExtension.h */,
-				782ACE721F2869BC002BF20C /* UIView+GKExtension.m */,
 			);
 			path = GKCover;
 			sourceTree = "<group>";
@@ -393,7 +381,7 @@
 		78D8CD6A1F1C6646005C262F /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
-				782ACE6D1F2869BC002BF20C /* GKCover */,
+				782ACE751F28905D002BF20C /* GKCover */,
 				78D8CE131F1E0475005C262F /* Refresh */,
 				78D8CDD01F1DFBAF005C262F /* MJRefresh */,
 				78D8CDB61F1C9723005C262F /* HSDownloadManager */,
@@ -793,7 +781,6 @@
 				78D8CDC91F1C9EA1005C262F /* GKUtilities.m in Sources */,
 				78D8CDA61F1C6673005C262F /* NSTimer+GKUtil.m in Sources */,
 				78D8CE1C1F1F0E58005C262F /* GKFadeNavigationController.m in Sources */,
-				782ACE741F2869BC002BF20C /* UIView+GKExtension.m in Sources */,
 				78D8CD8E1F1C6646005C262F /* QRItem.m in Sources */,
 				782ACE631F25F5D0002BF20C /* AboutMeViewController.m in Sources */,
 				7852CBCB1F1712E8007FFD0C /* ViewController.m in Sources */,
@@ -809,7 +796,6 @@
 				78D8CD891F1C6646005C262F /* GKTabBarController.m in Sources */,
 				78D8CE111F1DFBAF005C262F /* UIScrollView+MJRefresh.m in Sources */,
 				78D8CDC01F1C9723005C262F /* NSString+Hash.m in Sources */,
-				782ACE731F2869BC002BF20C /* GKCover.m in Sources */,
 				78D8CE0B1F1DFBAF005C262F /* MJRefreshNormalHeader.m in Sources */,
 				78D8CD8B1F1C6646005C262F /* GKUINavigationController.m in Sources */,
 				78D8CE051F1DFBAF005C262F /* MJRefreshAutoNormalFooter.m in Sources */,
