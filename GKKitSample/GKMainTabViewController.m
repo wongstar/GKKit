@@ -12,7 +12,7 @@
 #import "GKUINavigationController.h"
 #import "SampleListViewController.h"
 #import "AboutMeViewController.h"
-
+#import "GKCover.h"
 
 @interface GKMainTabViewController ()
 
@@ -78,8 +78,29 @@
     [self initTabWithVC:vc];
     
     
+    //__weak t=WeakSelf(self);
+    
+    __weak typeof(self)weakSelf=self;
+    
+    
+   
     [self addCenterButtonWithBlock:^(id sender, id obj) {
         debugLog(@".... click...");
+        
+        UIView *view=[[UIView alloc] initWithFrame:CGRectMake(0, 0, 300, 300)];
+       
+        UIButton *button=[[UIButton alloc] initWithFrame:CGRectMake(20, 18, 100, 36)];
+        
+        [button setTitle:@"Button" forState:UIControlStateNormal];
+        [view addSubview:button];
+        
+       
+        
+        [GKCover coverFrom:weakSelf.view contentView:view style:GKCoverStyleTranslucent showStyle:GKCoverShowStyleTop animStyle:GKCoverAnimStyleCenter notClick:NO showBlock:^{
+            
+        } hideBlock:^{
+            
+        }];
     }];
     // Do any additional setup after loading the view.
 }

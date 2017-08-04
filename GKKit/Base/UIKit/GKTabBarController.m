@@ -28,6 +28,7 @@
 
 
 -(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
 //    [self.tabBar.items[2] setEnabled:false];
 //    [self.tabBar.items enumerateObjectsUsingBlock:^(UITabBarItem * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
 //        debugLog(@"the idx is %d",idx);

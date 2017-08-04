@@ -47,7 +47,10 @@ typedef void (^GKNavButtonClickBlock)();
 @property (nonatomic,strong)UIColor *navBackgroundColor;//nav bar background color
 @property (nonatomic,strong)UIImage *backImage;
 
+@property (nonatomic, strong) UINavigationBar *navigationBar;
+@property (nonatomic, strong) UINavigationItem *navigationItem;
 
+@property (nonatomic,strong)UIImage *navigationBarBackgroundImage;
  
  
 

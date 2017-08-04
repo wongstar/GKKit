@@ -9,6 +9,7 @@
 #import "GKBaseViewController.h"
 #import "GKKitMacro.h"
 
+
 @interface GKBaseViewController (){
     UIButton *backButton;
 }
@@ -23,6 +24,7 @@
 - (void)setTitle:(NSString *)title
 {
     [super setTitle:title];
+    
     UILabel *titleView = (UILabel *)self.navigationItem.titleView;
     if (!titleView) {
         titleView = [[UILabel alloc] initWithFrame:CGRectZero];
@@ -52,7 +54,8 @@
 
 -(void)setNaviBackgroundColor:(UIColor *)navColor{
     _navBackgroundColor=navColor;
-    self.navigationController.navigationBar.barTintColor=navColor;
+    [self wr_setNavBarBarTintColor:_navBackgroundColor];
+    //self.navigationController.navigationBar.barTintColor=navColor;
 }
 
 -(void)setBackgroundColor:(UIColor *)backgroundColor{
@@ -63,9 +66,9 @@
 - (void)setTitleColor:(UIColor *)titleColor
 {
     _titleColor = titleColor;
-    
-    UILabel *titleView = (UILabel *)self.navigationItem.titleView;
-    titleView.textColor = titleColor;
+   
+    [self wr_setNavBarTintColor:_titleColor];
+
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -91,11 +94,64 @@
     }
     self.view.backgroundColor = self.backgroundColor;//kTextColorLevel6;
     
+    [self setupNavigationBar];
+   
+}
+
+
+-(CGFloat)heightOffset{
+    if(_heightOffset == 0){
+        _heightOffset=64;
+    }
+    return _heightOffset;
+}
+
+- (UINavigationBar *)navigationBar
+{
+    if (_navigationBar == nil) {
+        _navigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, _heightOffset)];
+    }
+    return _navigationBar;
+}
+
+- (UINavigationItem *)navigationItem
+{
+    if (_navigationItem == nil) {
+        _navigationItem = [UINavigationItem new];
+    }
+    return _navigationItem;
+}
+
+-(void)setNavigationBarImage{
+     [self wr_setNavBarBackgroundImage:self.navigationBarBackgroundImage];
+}
+
+
+- (void)setupNavigationBar
+{
+    // 自定义导航栏必须设置这个属性!!!!!!!
+    [self wr_setCustomNavBar:self.navigationBar];
+    
+    [self.view addSubview:self.navigationBar];
+    self.navigationBar.items = @[self.navigationItem];
+    
+
     if (0 < [self.navigationController.viewControllers indexOfObject:self]) {
         if (NO == self.hideBackButton) {
             [self addBackButton];
         }
     }
+  
+}
+
+
+-(UIImage *)navigationBarBackgroundImage{
+    if(_navigationBarBackgroundImage == nil ){
+        
+        _navigationBarBackgroundImage=[UIImage imageNamedWithGK:@"nav_item_bg"];
+        
+    }
+    return _navigationBarBackgroundImage;
 }
 
 - (void)setHideBackButton:(BOOL)hide
@@ -172,27 +228,33 @@
 {
     [super viewWillAppear:animated];
     
-    [self.navigationController setNavigationBarHidden:self.navigationBarHidden animated:animated];
-    [[self.navigationController.navigationBar topItem] setHidesBackButton:YES];
-    
-    
-    if ([self showFirstLevelNavigationBarBackgroudImage]) {
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    }
-    else if (GKNaviBarStyleRed == [self naviBarStyle]) {
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
-    }
-    else {
-        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
-    }
+//    [self.navigationController setNavigationBarHidden:self.navigationBarHidden animated:animated];
+//    [[self.navigationController.navigationBar topItem] setHidesBackButton:YES];
+//    
+//    
+//    if ([self showFirstLevelNavigationBarBackgroudImage]) {
+//        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+//    }
+//    else if (GKNaviBarStyleRed == [self naviBarStyle]) {
+//        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
+//    }
+//    else {
+//        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
+//    }
 }
+
+-(void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
     
-    [self.navigationController setNavigationBarHidden:self.navigationBarHidden animated:animated];
-    [[self.navigationController.navigationBar topItem] setHidesBackButton:YES];
+//    [self.navigationController setNavigationBarHidden:self.navigationBarHidden animated:animated];
+//    [[self.navigationController.navigationBar topItem] setHidesBackButton:YES];
     
 }
 

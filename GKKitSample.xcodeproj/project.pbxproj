@@ -13,6 +13,12 @@
 		782ACE691F25FBE3002BF20C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 782ACE6B1F25FBE3002BF20C /* Localizable.strings */; };
 		782ACE7C1F289D51002BF20C /* GKCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE781F289D51002BF20C /* GKCover.m */; };
 		782ACE7D1F289D51002BF20C /* UIView+GKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE7B1F289D51002BF20C /* UIView+GKExtension.m */; };
+		782ACE891F2ED04B002BF20C /* GKSegmentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE881F2ED04B002BF20C /* GKSegmentViewController.m */; };
+		782ACE911F2ED842002BF20C /* GKSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE901F2ED842002BF20C /* GKSegmentedControl.m */; };
+		782ACE941F2F0782002BF20C /* TestSegementViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE931F2F0782002BF20C /* TestSegementViewController.m */; };
+		782ACEA01F31D635002BF20C /* PPBaseCell+TableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE9B1F31D635002BF20C /* PPBaseCell+TableView.m */; };
+		782ACEA11F31D635002BF20C /* PPBaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE9D1F31D635002BF20C /* PPBaseCell.m */; };
+		782ACEA21F31D635002BF20C /* PPCellAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 782ACE9F1F31D635002BF20C /* PPCellAdapter.m */; };
 		7852CBC51F1712E8007FFD0C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBC41F1712E8007FFD0C /* main.m */; };
 		7852CBC81F1712E8007FFD0C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBC71F1712E8007FFD0C /* AppDelegate.m */; };
 		7852CBCB1F1712E8007FFD0C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBCA1F1712E8007FFD0C /* ViewController.m */; };
@@ -20,6 +26,9 @@
 		7852CBD11F1712E8007FFD0C /* GKKitSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBCF1F1712E8007FFD0C /* GKKitSample.xcdatamodeld */; };
 		7852CBD61F1712E8007FFD0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7852CBD41F1712E8007FFD0C /* LaunchScreen.storyboard */; };
 		7852CBE11F1712E8007FFD0C /* GKKitSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7852CBE01F1712E8007FFD0C /* GKKitSampleTests.m */; };
+		78B06F351F3314FB0060A9D9 /* TestLagouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F341F3314FB0060A9D9 /* TestLagouViewController.m */; };
+		78B06F571F346AE00060A9D9 /* WRImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F541F346AE00060A9D9 /* WRImageHelper.m */; };
+		78B06F581F346AE00060A9D9 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F561F346AE00060A9D9 /* WRNavigationBar.m */; };
 		78D8CD881F1C6646005C262F /* GKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD5E1F1C6646005C262F /* GKBaseViewController.m */; };
 		78D8CD891F1C6646005C262F /* GKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD601F1C6646005C262F /* GKTabBarController.m */; };
 		78D8CD8A1F1C6646005C262F /* GKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD621F1C6646005C262F /* GKTableViewController.m */; };
@@ -102,6 +111,19 @@
 		782ACE791F289D51002BF20C /* GKCoverEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCoverEnum.h; sourceTree = "<group>"; };
 		782ACE7A1F289D51002BF20C /* UIView+GKExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GKExtension.h"; sourceTree = "<group>"; };
 		782ACE7B1F289D51002BF20C /* UIView+GKExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GKExtension.m"; sourceTree = "<group>"; };
+		782ACE871F2ED04B002BF20C /* GKSegmentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKSegmentViewController.h; sourceTree = "<group>"; };
+		782ACE881F2ED04B002BF20C /* GKSegmentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKSegmentViewController.m; sourceTree = "<group>"; };
+		782ACE8F1F2ED842002BF20C /* GKSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKSegmentedControl.h; sourceTree = "<group>"; };
+		782ACE901F2ED842002BF20C /* GKSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKSegmentedControl.m; sourceTree = "<group>"; };
+		782ACE921F2F0782002BF20C /* TestSegementViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestSegementViewController.h; sourceTree = "<group>"; };
+		782ACE931F2F0782002BF20C /* TestSegementViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestSegementViewController.m; sourceTree = "<group>"; };
+		782ACE991F31D635002BF20C /* PPAdapterMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPAdapterMacro.h; sourceTree = "<group>"; };
+		782ACE9A1F31D635002BF20C /* PPBaseCell+TableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PPBaseCell+TableView.h"; sourceTree = "<group>"; };
+		782ACE9B1F31D635002BF20C /* PPBaseCell+TableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PPBaseCell+TableView.m"; sourceTree = "<group>"; };
+		782ACE9C1F31D635002BF20C /* PPBaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPBaseCell.h; sourceTree = "<group>"; };
+		782ACE9D1F31D635002BF20C /* PPBaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPBaseCell.m; sourceTree = "<group>"; };
+		782ACE9E1F31D635002BF20C /* PPCellAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPCellAdapter.h; sourceTree = "<group>"; };
+		782ACE9F1F31D635002BF20C /* PPCellAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPCellAdapter.m; sourceTree = "<group>"; };
 		7852CBC01F1712E8007FFD0C /* GKKitSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKKitSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7852CBC41F1712E8007FFD0C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7852CBC61F1712E8007FFD0C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -115,6 +137,12 @@
 		7852CBDC1F1712E8007FFD0C /* GKKitSampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GKKitSampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7852CBE01F1712E8007FFD0C /* GKKitSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKKitSampleTests.m; sourceTree = "<group>"; };
 		7852CBE21F1712E8007FFD0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		78B06F331F3314FB0060A9D9 /* TestLagouViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestLagouViewController.h; sourceTree = "<group>"; };
+		78B06F341F3314FB0060A9D9 /* TestLagouViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestLagouViewController.m; sourceTree = "<group>"; };
+		78B06F531F346AE00060A9D9 /* WRImageHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRImageHelper.h; sourceTree = "<group>"; };
+		78B06F541F346AE00060A9D9 /* WRImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRImageHelper.m; sourceTree = "<group>"; };
+		78B06F551F346AE00060A9D9 /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
+		78B06F561F346AE00060A9D9 /* WRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
 		78D8CD5B1F1C6646005C262F /* GKKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKKitMacro.h; sourceTree = "<group>"; };
 		78D8CD5D1F1C6646005C262F /* GKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBaseViewController.h; sourceTree = "<group>"; };
 		78D8CD5E1F1C6646005C262F /* GKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBaseViewController.m; sourceTree = "<group>"; };
@@ -262,6 +290,29 @@
 			path = GKCover;
 			sourceTree = "<group>";
 		};
+		782ACE8E1F2ED842002BF20C /* GKSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				782ACE8F1F2ED842002BF20C /* GKSegmentedControl.h */,
+				782ACE901F2ED842002BF20C /* GKSegmentedControl.m */,
+			);
+			path = GKSegmentedControl;
+			sourceTree = "<group>";
+		};
+		782ACE981F31D635002BF20C /* PPAdapter */ = {
+			isa = PBXGroup;
+			children = (
+				782ACE991F31D635002BF20C /* PPAdapterMacro.h */,
+				782ACE9A1F31D635002BF20C /* PPBaseCell+TableView.h */,
+				782ACE9B1F31D635002BF20C /* PPBaseCell+TableView.m */,
+				782ACE9C1F31D635002BF20C /* PPBaseCell.h */,
+				782ACE9D1F31D635002BF20C /* PPBaseCell.m */,
+				782ACE9E1F31D635002BF20C /* PPCellAdapter.h */,
+				782ACE9F1F31D635002BF20C /* PPCellAdapter.m */,
+			);
+			path = PPAdapter;
+			sourceTree = "<group>";
+		};
 		7852CBB71F1712E8007FFD0C = {
 			isa = PBXGroup;
 			children = (
@@ -296,8 +347,12 @@
 				78D8CE241F204CD6005C262F /* TestGifTableViewController.m */,
 				F890C0281F26393C00CC7797 /* SampleListViewController.h */,
 				F890C0291F26393C00CC7797 /* SampleListViewController.m */,
+				78B06F331F3314FB0060A9D9 /* TestLagouViewController.h */,
+				78B06F341F3314FB0060A9D9 /* TestLagouViewController.m */,
 				782ACE611F25F5D0002BF20C /* AboutMeViewController.h */,
 				782ACE621F25F5D0002BF20C /* AboutMeViewController.m */,
+				782ACE921F2F0782002BF20C /* TestSegementViewController.h */,
+				782ACE931F2F0782002BF20C /* TestSegementViewController.m */,
 				7852CBCC1F1712E8007FFD0C /* Main.storyboard */,
 				7852CBD41F1712E8007FFD0C /* LaunchScreen.storyboard */,
 				782ACDA51F25CCB5002BF20C /* Assets.xcassets */,
@@ -324,6 +379,17 @@
 				7852CBE21F1712E8007FFD0C /* Info.plist */,
 			);
 			path = GKKitSampleTests;
+			sourceTree = "<group>";
+		};
+		78B06F521F346AE00060A9D9 /* WRNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				78B06F531F346AE00060A9D9 /* WRImageHelper.h */,
+				78B06F541F346AE00060A9D9 /* WRImageHelper.m */,
+				78B06F551F346AE00060A9D9 /* WRNavigationBar.h */,
+				78B06F561F346AE00060A9D9 /* WRNavigationBar.m */,
+			);
+			path = WRNavigationBar;
 			sourceTree = "<group>";
 		};
 		78D8CD4C1F1C6646005C262F /* GKKit */ = {
@@ -353,6 +419,8 @@
 		78D8CD5C1F1C6646005C262F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				78B06F521F346AE00060A9D9 /* WRNavigationBar */,
+				782ACE981F31D635002BF20C /* PPAdapter */,
 				78D8CE1A1F1F0E58005C262F /* GKFadeNavigationController.h */,
 				78D8CE1B1F1F0E58005C262F /* GKFadeNavigationController.m */,
 				78D8CD5D1F1C6646005C262F /* GKBaseViewController.h */,
@@ -363,6 +431,8 @@
 				78D8CD621F1C6646005C262F /* GKTableViewController.m */,
 				78D8CD631F1C6646005C262F /* GKUINavigationController.h */,
 				78D8CD641F1C6646005C262F /* GKUINavigationController.m */,
+				782ACE871F2ED04B002BF20C /* GKSegmentViewController.h */,
+				782ACE881F2ED04B002BF20C /* GKSegmentViewController.m */,
 				78D8CD651F1C6646005C262F /* UIView+GKUtil.h */,
 				78D8CD661F1C6646005C262F /* UIView+GKUtil.m */,
 				78D8CDB31F1C6D6E005C262F /* UIColor+GKUtil.h */,
@@ -393,6 +463,7 @@
 		78D8CD6A1F1C6646005C262F /* ThirdPart */ = {
 			isa = PBXGroup;
 			children = (
+				782ACE8E1F2ED842002BF20C /* GKSegmentedControl */,
 				782ACE761F289D51002BF20C /* GKCover */,
 				78D8CE131F1E0475005C262F /* Refresh */,
 				78D8CDD01F1DFBAF005C262F /* MJRefresh */,
@@ -766,6 +837,7 @@
 				78D8CD881F1C6646005C262F /* GKBaseViewController.m in Sources */,
 				F890C02A1F26393C00CC7797 /* SampleListViewController.m in Sources */,
 				78D8CDA41F1C6673005C262F /* NSNumber+GKUtil.m in Sources */,
+				78B06F351F3314FB0060A9D9 /* TestLagouViewController.m in Sources */,
 				78D8CE021F1DFBAF005C262F /* MJRefreshFooter.m in Sources */,
 				78D8CE0E1F1DFBAF005C262F /* MJRefreshConst.m in Sources */,
 				78D8CDAF1F1C67FE005C262F /* CustomIOSAlertView.m in Sources */,
@@ -783,12 +855,16 @@
 				78D8CE091F1DFBAF005C262F /* MJRefreshBackStateFooter.m in Sources */,
 				78D8CD8C1F1C6646005C262F /* UIView+GKUtil.m in Sources */,
 				78D8CE081F1DFBAF005C262F /* MJRefreshBackNormalFooter.m in Sources */,
+				782ACE891F2ED04B002BF20C /* GKSegmentViewController.m in Sources */,
 				782ACDA41F2595D6002BF20C /* UILabel+Util.m in Sources */,
 				78D8CE0C1F1DFBAF005C262F /* MJRefreshStateHeader.m in Sources */,
+				78B06F571F346AE00060A9D9 /* WRImageHelper.m in Sources */,
 				78D8CE001F1DFBAF005C262F /* MJRefreshBackFooter.m in Sources */,
 				78D8CD911F1C6646005C262F /* GKComponent.m in Sources */,
 				78D8CE031F1DFBAF005C262F /* MJRefreshHeader.m in Sources */,
+				782ACEA11F31D635002BF20C /* PPBaseCell.m in Sources */,
 				78D8CD8F1F1C6646005C262F /* QRMenu.m in Sources */,
+				782ACEA21F31D635002BF20C /* PPCellAdapter.m in Sources */,
 				78D8CE101F1DFBAF005C262F /* UIScrollView+MJExtension.m in Sources */,
 				78D8CDC91F1C9EA1005C262F /* GKUtilities.m in Sources */,
 				78D8CDA61F1C6673005C262F /* NSTimer+GKUtil.m in Sources */,
@@ -798,10 +874,13 @@
 				782ACE631F25F5D0002BF20C /* AboutMeViewController.m in Sources */,
 				7852CBCB1F1712E8007FFD0C /* ViewController.m in Sources */,
 				7852CBC81F1712E8007FFD0C /* AppDelegate.m in Sources */,
+				78B06F581F346AE00060A9D9 /* WRNavigationBar.m in Sources */,
 				78D8CD921F1C6646005C262F /* GKUIFactory.m in Sources */,
 				78D8CE041F1DFBAF005C262F /* MJRefreshAutoGifFooter.m in Sources */,
 				78D8CDAC1F1C66AE005C262F /* NSData+GKUtil.m in Sources */,
+				782ACEA01F31D635002BF20C /* PPBaseCell+TableView.m in Sources */,
 				78D8CD901F1C6646005C262F /* QRView.m in Sources */,
+				782ACE911F2ED842002BF20C /* GKSegmentedControl.m in Sources */,
 				78D8CD8A1F1C6646005C262F /* GKTableViewController.m in Sources */,
 				78D8CDA91F1C669D005C262F /* NSString+GKUtil.m in Sources */,
 				78D8CE0A1F1DFBAF005C262F /* MJRefreshGifHeader.m in Sources */,
@@ -809,6 +888,7 @@
 				78D8CD891F1C6646005C262F /* GKTabBarController.m in Sources */,
 				78D8CE111F1DFBAF005C262F /* UIScrollView+MJRefresh.m in Sources */,
 				78D8CDC01F1C9723005C262F /* NSString+Hash.m in Sources */,
+				782ACE941F2F0782002BF20C /* TestSegementViewController.m in Sources */,
 				782ACE7C1F289D51002BF20C /* GKCover.m in Sources */,
 				78D8CE0B1F1DFBAF005C262F /* MJRefreshNormalHeader.m in Sources */,
 				78D8CD8B1F1C6646005C262F /* GKUINavigationController.m in Sources */,
@@ -968,7 +1048,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DSEGUA2LJT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -995,7 +1074,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = DSEGUA2LJT;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

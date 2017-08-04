@@ -83,4 +83,6 @@
 - (UIImage *)imageFromView;
 
 -(CGSize)getViewSizeByString:(NSString *)string withLable:(UILabel *)label;
+
++ (instancetype)viewFromXIB;
 @end

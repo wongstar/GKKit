@@ -8,7 +8,7 @@
 
 #import "GKKit.h"
 #import "SampleListViewController.h"
-
+#import "TestLagouViewController.h"
 @interface SampleListViewController (){
     NSArray *source;
     NSArray *vc;
@@ -23,19 +23,24 @@
     self.hasLoadMore=false;
     
     [self setupArr];
-    
+  
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 }
 
 -(void)setupArr{
-    source=@[@"Test MJ GIF tableView",@"Test Base UIViewController"];
-    vc=@[@"TestGifTableViewController",@"TestBaseViewController"];
+    source=@[@"Test MJ GIF tableView",@"Test Base UIViewController",@"Test Segment",@"TestLagouViewController"];
+    vc=@[@"TestGifTableViewController",@"TestBaseViewController",@"TestSegementViewController",@"TestLagouViewController"];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;

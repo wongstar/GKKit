@@ -22,7 +22,7 @@
 #import "UIImage+GKUtil.h"
 #import "UIButton+GKUtil.h"
 #import "UILabel+Util.h"
-
+#import "WRNavigationBar.h"
 
 
 #ifdef DEBUG
@@ -217,8 +217,8 @@ sizeWithFont:font constrainedToSize:maxSize lineBreakMode:mode] : CGSizeZero;
 #define GK_SWAP(_a_, _b_)  do { __typeof__(_a_) _tmp_ = (_a_); (_a_) = (_b_); (_b_) = _tmp_; } while (0)
 #endif
 
-// 黑色
-#define     kTextColorLevel1       colorFromRGB(0x000000)
+// 白色
+#define     kTextColorLevel1       colorFromRGB(0xffffff)
 
 #define kUseScreenShotGesture  1
 
