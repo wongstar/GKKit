@@ -8,7 +8,7 @@
 
 #import "GKBaseViewController.h"
 
-@interface GKCustomTableViewController : GKBaseViewController
+@interface GKFadeTableViewController : GKBaseViewController
 @property   (nonatomic, retain, readonly) UITableView *tableView;
 @property   (nonatomic,assign) UIEdgeInsets contentInset;
 

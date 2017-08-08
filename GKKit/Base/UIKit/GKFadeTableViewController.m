@@ -6,15 +6,15 @@
 //  Copyright © 2017年 star. All rights reserved.
 //
 
-#import "GKCustomTableViewController.h"
+#import "GKFadeTableViewController.h"
 
 
-@interface GKCustomTableViewController ()<UITableViewDataSource,UITableViewDelegate>
+@interface GKFadeTableViewController ()<UITableViewDataSource,UITableViewDelegate>
 @property   (nonatomic, retain, readwrite) UITableView  *baseTableView;
 
 @end
 
-@implementation GKCustomTableViewController
+@implementation GKFadeTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

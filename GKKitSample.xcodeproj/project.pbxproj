@@ -32,7 +32,7 @@
 		78B06F5B1F39698E0060A9D9 /* GKBaseCustomBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F5A1F39698E0060A9D9 /* GKBaseCustomBarViewController.m */; };
 		78B06F5F1F398C3D0060A9D9 /* CustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F5E1F398C3D0060A9D9 /* CustomNavViewController.m */; };
 		78B06F621F3995960060A9D9 /* QQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F611F3995960060A9D9 /* QQViewController.m */; };
-		78B06F651F3999680060A9D9 /* GKCustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F641F3999680060A9D9 /* GKCustomTableViewController.m */; };
+		78B06F651F3999680060A9D9 /* GKFadeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F641F3999680060A9D9 /* GKFadeTableViewController.m */; };
 		78D8CD881F1C6646005C262F /* GKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD5E1F1C6646005C262F /* GKBaseViewController.m */; };
 		78D8CD891F1C6646005C262F /* GKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD601F1C6646005C262F /* GKTabBarController.m */; };
 		78D8CD8A1F1C6646005C262F /* GKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD621F1C6646005C262F /* GKTableViewController.m */; };
@@ -153,8 +153,8 @@
 		78B06F5E1F398C3D0060A9D9 /* CustomNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavViewController.m; sourceTree = "<group>"; };
 		78B06F601F3995960060A9D9 /* QQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQViewController.h; sourceTree = "<group>"; };
 		78B06F611F3995960060A9D9 /* QQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQViewController.m; sourceTree = "<group>"; };
-		78B06F631F3999680060A9D9 /* GKCustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCustomTableViewController.h; sourceTree = "<group>"; };
-		78B06F641F3999680060A9D9 /* GKCustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKCustomTableViewController.m; sourceTree = "<group>"; };
+		78B06F631F3999680060A9D9 /* GKFadeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKFadeTableViewController.h; sourceTree = "<group>"; };
+		78B06F641F3999680060A9D9 /* GKFadeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKFadeTableViewController.m; sourceTree = "<group>"; };
 		78D8CD5B1F1C6646005C262F /* GKKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKKitMacro.h; sourceTree = "<group>"; };
 		78D8CD5D1F1C6646005C262F /* GKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBaseViewController.h; sourceTree = "<group>"; };
 		78D8CD5E1F1C6646005C262F /* GKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBaseViewController.m; sourceTree = "<group>"; };
@@ -453,8 +453,8 @@
 				78D8CD5E1F1C6646005C262F /* GKBaseViewController.m */,
 				78D8CD5F1F1C6646005C262F /* GKTabBarController.h */,
 				78D8CD601F1C6646005C262F /* GKTabBarController.m */,
-				78B06F631F3999680060A9D9 /* GKCustomTableViewController.h */,
-				78B06F641F3999680060A9D9 /* GKCustomTableViewController.m */,
+				78B06F631F3999680060A9D9 /* GKFadeTableViewController.h */,
+				78B06F641F3999680060A9D9 /* GKFadeTableViewController.m */,
 				78D8CD611F1C6646005C262F /* GKTableViewController.h */,
 				78D8CD621F1C6646005C262F /* GKTableViewController.m */,
 				78D8CD631F1C6646005C262F /* GKUINavigationController.h */,
@@ -862,7 +862,7 @@
 				78D8CDCE1F1DAF67005C262F /* NSObject+YYModel.m in Sources */,
 				78D8CDA31F1C6673005C262F /* NSDate+GKUtil.m in Sources */,
 				7852CBD11F1712E8007FFD0C /* GKKitSample.xcdatamodeld in Sources */,
-				78B06F651F3999680060A9D9 /* GKCustomTableViewController.m in Sources */,
+				78B06F651F3999680060A9D9 /* GKFadeTableViewController.m in Sources */,
 				78D8CD881F1C6646005C262F /* GKBaseViewController.m in Sources */,
 				F890C02A1F26393C00CC7797 /* SampleListViewController.m in Sources */,
 				78D8CDA41F1C6673005C262F /* NSNumber+GKUtil.m in Sources */,
