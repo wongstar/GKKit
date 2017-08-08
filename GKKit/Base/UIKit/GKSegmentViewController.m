@@ -13,6 +13,7 @@
 @interface GKSegmentViewController ()<UIScrollViewDelegate>{
     CGFloat vcWidth;  // 每个子视图控制器的视图的宽
     CGFloat vcHeight; // 每个子视图控制器的视图的高
+    float lastOffset;
     BOOL _isDrag;
 }
 
@@ -122,6 +123,7 @@
         vc.view.frame = CGRectMake(vcWidth * i, 0, vcWidth, vcHeight);
         [self.scrollView addSubview:vc.view];
     }
+    lastOffset=(cnt-1)*vcWidth;
 }
 
 #pragma makr -Segement callback..
@@ -141,7 +143,15 @@
     _isDrag = YES;
 }
 
-
+-(void)scrollViewDidScroll:(UIScrollView *)scrollView{
+    if(scrollView.contentOffset.x<0){
+        [scrollView setContentOffset:CGPointMake(0, scrollView.contentOffset.y) animated:NO];
+    }
+   
+    if(scrollView.contentOffset.x>lastOffset){
+        [scrollView setContentOffset:CGPointMake(lastOffset, scrollView.contentOffset.y) animated:NO];
+    }
+}
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     NSInteger index = scrollView.contentOffset.x / scrollView.frame.size.width;
