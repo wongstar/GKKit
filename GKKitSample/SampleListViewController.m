@@ -9,6 +9,8 @@
 #import "GKKit.h"
 #import "SampleListViewController.h"
 #import "TestLagouViewController.h"
+#import "CustomNavViewController.h"
+#import "QQViewController.h"
 @interface SampleListViewController (){
     NSArray *source;
     NSArray *vc;
@@ -29,8 +31,8 @@
 }
 
 -(void)setupArr{
-    source=@[@"Test MJ GIF tableView",@"Test Base UIViewController",@"Test Segment",@"TestLagouViewController"];
-    vc=@[@"TestGifTableViewController",@"TestBaseViewController",@"TestSegementViewController",@"TestLagouViewController"];
+    source=@[@"Test MJ GIF tableView",@"Test Base UIViewController",@"Test Segment",@"TestLagouViewController",@"Custom Nav",@"QQ Zone"];
+    vc=@[@"TestGifTableViewController",@"TestBaseViewController",@"TestSegementViewController",@"TestLagouViewController",@"CustomNavViewController",@"QQViewController"];
 }
 
 - (void)didReceiveMemoryWarning {

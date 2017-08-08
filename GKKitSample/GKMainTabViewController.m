@@ -31,12 +31,12 @@
     //one.backgroundColor=[UIColor grayColor];
     
     GKUINavigationController *oneNavi=[[GKUINavigationController alloc] initWithRootViewController:one];
-    [one setTitleColor:[UIColor whiteColor]];
+    //[one setTitleColor:[UIColor whiteColor]];
     [oneNavi showNavigationBarColor:gkColorFromRGBA(244, 89, 27,1)];
     
     ViewController *two=[[ViewController alloc] init];
-    two.title=@"two";
-    two.navigationBarHidden=YES;
+//    two.title=@"two";
+//    two.navigationBarHidden=YES;
     two.backgroundColor=[UIColor grayColor];
     
     GKUINavigationController *twoNavi=[[GKUINavigationController alloc] initWithRootViewController:two];

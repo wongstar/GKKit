@@ -29,6 +29,10 @@
 		78B06F351F3314FB0060A9D9 /* TestLagouViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F341F3314FB0060A9D9 /* TestLagouViewController.m */; };
 		78B06F571F346AE00060A9D9 /* WRImageHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F541F346AE00060A9D9 /* WRImageHelper.m */; };
 		78B06F581F346AE00060A9D9 /* WRNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F561F346AE00060A9D9 /* WRNavigationBar.m */; };
+		78B06F5B1F39698E0060A9D9 /* GKBaseCustomBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F5A1F39698E0060A9D9 /* GKBaseCustomBarViewController.m */; };
+		78B06F5F1F398C3D0060A9D9 /* CustomNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F5E1F398C3D0060A9D9 /* CustomNavViewController.m */; };
+		78B06F621F3995960060A9D9 /* QQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F611F3995960060A9D9 /* QQViewController.m */; };
+		78B06F651F3999680060A9D9 /* GKCustomTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78B06F641F3999680060A9D9 /* GKCustomTableViewController.m */; };
 		78D8CD881F1C6646005C262F /* GKBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD5E1F1C6646005C262F /* GKBaseViewController.m */; };
 		78D8CD891F1C6646005C262F /* GKTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD601F1C6646005C262F /* GKTabBarController.m */; };
 		78D8CD8A1F1C6646005C262F /* GKTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78D8CD621F1C6646005C262F /* GKTableViewController.m */; };
@@ -143,6 +147,14 @@
 		78B06F541F346AE00060A9D9 /* WRImageHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRImageHelper.m; sourceTree = "<group>"; };
 		78B06F551F346AE00060A9D9 /* WRNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WRNavigationBar.h; sourceTree = "<group>"; };
 		78B06F561F346AE00060A9D9 /* WRNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WRNavigationBar.m; sourceTree = "<group>"; };
+		78B06F591F39698E0060A9D9 /* GKBaseCustomBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBaseCustomBarViewController.h; sourceTree = "<group>"; };
+		78B06F5A1F39698E0060A9D9 /* GKBaseCustomBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBaseCustomBarViewController.m; sourceTree = "<group>"; };
+		78B06F5D1F398C3D0060A9D9 /* CustomNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavViewController.h; sourceTree = "<group>"; };
+		78B06F5E1F398C3D0060A9D9 /* CustomNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavViewController.m; sourceTree = "<group>"; };
+		78B06F601F3995960060A9D9 /* QQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QQViewController.h; sourceTree = "<group>"; };
+		78B06F611F3995960060A9D9 /* QQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QQViewController.m; sourceTree = "<group>"; };
+		78B06F631F3999680060A9D9 /* GKCustomTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCustomTableViewController.h; sourceTree = "<group>"; };
+		78B06F641F3999680060A9D9 /* GKCustomTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKCustomTableViewController.m; sourceTree = "<group>"; };
 		78D8CD5B1F1C6646005C262F /* GKKitMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKKitMacro.h; sourceTree = "<group>"; };
 		78D8CD5D1F1C6646005C262F /* GKBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKBaseViewController.h; sourceTree = "<group>"; };
 		78D8CD5E1F1C6646005C262F /* GKBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKBaseViewController.m; sourceTree = "<group>"; };
@@ -334,25 +346,10 @@
 		7852CBC21F1712E8007FFD0C /* GKKitSample */ = {
 			isa = PBXGroup;
 			children = (
+				78B06F5C1F398AC20060A9D9 /* Test */,
 				78D8CD4C1F1C6646005C262F /* GKKit */,
 				7852CBC61F1712E8007FFD0C /* AppDelegate.h */,
 				7852CBC71F1712E8007FFD0C /* AppDelegate.m */,
-				7852CBC91F1712E8007FFD0C /* ViewController.h */,
-				7852CBCA1F1712E8007FFD0C /* ViewController.m */,
-				78D8CE1D1F1F6BDD005C262F /* GKMainTabViewController.h */,
-				78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */,
-				78D8CE261F204E47005C262F /* TestBaseViewController.h */,
-				78D8CE271F204E47005C262F /* TestBaseViewController.m */,
-				78D8CE231F204CD6005C262F /* TestGifTableViewController.h */,
-				78D8CE241F204CD6005C262F /* TestGifTableViewController.m */,
-				F890C0281F26393C00CC7797 /* SampleListViewController.h */,
-				F890C0291F26393C00CC7797 /* SampleListViewController.m */,
-				78B06F331F3314FB0060A9D9 /* TestLagouViewController.h */,
-				78B06F341F3314FB0060A9D9 /* TestLagouViewController.m */,
-				782ACE611F25F5D0002BF20C /* AboutMeViewController.h */,
-				782ACE621F25F5D0002BF20C /* AboutMeViewController.m */,
-				782ACE921F2F0782002BF20C /* TestSegementViewController.h */,
-				782ACE931F2F0782002BF20C /* TestSegementViewController.m */,
 				7852CBCC1F1712E8007FFD0C /* Main.storyboard */,
 				7852CBD41F1712E8007FFD0C /* LaunchScreen.storyboard */,
 				782ACDA51F25CCB5002BF20C /* Assets.xcassets */,
@@ -392,6 +389,33 @@
 			path = WRNavigationBar;
 			sourceTree = "<group>";
 		};
+		78B06F5C1F398AC20060A9D9 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				7852CBC91F1712E8007FFD0C /* ViewController.h */,
+				7852CBCA1F1712E8007FFD0C /* ViewController.m */,
+				78D8CE1D1F1F6BDD005C262F /* GKMainTabViewController.h */,
+				78D8CE1E1F1F6BDD005C262F /* GKMainTabViewController.m */,
+				78D8CE261F204E47005C262F /* TestBaseViewController.h */,
+				78D8CE271F204E47005C262F /* TestBaseViewController.m */,
+				78D8CE231F204CD6005C262F /* TestGifTableViewController.h */,
+				78D8CE241F204CD6005C262F /* TestGifTableViewController.m */,
+				F890C0281F26393C00CC7797 /* SampleListViewController.h */,
+				F890C0291F26393C00CC7797 /* SampleListViewController.m */,
+				78B06F331F3314FB0060A9D9 /* TestLagouViewController.h */,
+				78B06F341F3314FB0060A9D9 /* TestLagouViewController.m */,
+				782ACE611F25F5D0002BF20C /* AboutMeViewController.h */,
+				782ACE621F25F5D0002BF20C /* AboutMeViewController.m */,
+				782ACE921F2F0782002BF20C /* TestSegementViewController.h */,
+				782ACE931F2F0782002BF20C /* TestSegementViewController.m */,
+				78B06F5D1F398C3D0060A9D9 /* CustomNavViewController.h */,
+				78B06F5E1F398C3D0060A9D9 /* CustomNavViewController.m */,
+				78B06F601F3995960060A9D9 /* QQViewController.h */,
+				78B06F611F3995960060A9D9 /* QQViewController.m */,
+			);
+			name = Test;
+			sourceTree = "<group>";
+		};
 		78D8CD4C1F1C6646005C262F /* GKKit */ = {
 			isa = PBXGroup;
 			children = (
@@ -420,13 +444,17 @@
 			isa = PBXGroup;
 			children = (
 				78B06F521F346AE00060A9D9 /* WRNavigationBar */,
-				782ACE981F31D635002BF20C /* PPAdapter */,
 				78D8CE1A1F1F0E58005C262F /* GKFadeNavigationController.h */,
 				78D8CE1B1F1F0E58005C262F /* GKFadeNavigationController.m */,
+				782ACE981F31D635002BF20C /* PPAdapter */,
+				78B06F591F39698E0060A9D9 /* GKBaseCustomBarViewController.h */,
+				78B06F5A1F39698E0060A9D9 /* GKBaseCustomBarViewController.m */,
 				78D8CD5D1F1C6646005C262F /* GKBaseViewController.h */,
 				78D8CD5E1F1C6646005C262F /* GKBaseViewController.m */,
 				78D8CD5F1F1C6646005C262F /* GKTabBarController.h */,
 				78D8CD601F1C6646005C262F /* GKTabBarController.m */,
+				78B06F631F3999680060A9D9 /* GKCustomTableViewController.h */,
+				78B06F641F3999680060A9D9 /* GKCustomTableViewController.m */,
 				78D8CD611F1C6646005C262F /* GKTableViewController.h */,
 				78D8CD621F1C6646005C262F /* GKTableViewController.m */,
 				78D8CD631F1C6646005C262F /* GKUINavigationController.h */,
@@ -834,6 +862,7 @@
 				78D8CDCE1F1DAF67005C262F /* NSObject+YYModel.m in Sources */,
 				78D8CDA31F1C6673005C262F /* NSDate+GKUtil.m in Sources */,
 				7852CBD11F1712E8007FFD0C /* GKKitSample.xcdatamodeld in Sources */,
+				78B06F651F3999680060A9D9 /* GKCustomTableViewController.m in Sources */,
 				78D8CD881F1C6646005C262F /* GKBaseViewController.m in Sources */,
 				F890C02A1F26393C00CC7797 /* SampleListViewController.m in Sources */,
 				78D8CDA41F1C6673005C262F /* NSNumber+GKUtil.m in Sources */,
@@ -859,6 +888,7 @@
 				782ACDA41F2595D6002BF20C /* UILabel+Util.m in Sources */,
 				78D8CE0C1F1DFBAF005C262F /* MJRefreshStateHeader.m in Sources */,
 				78B06F571F346AE00060A9D9 /* WRImageHelper.m in Sources */,
+				78B06F5F1F398C3D0060A9D9 /* CustomNavViewController.m in Sources */,
 				78D8CE001F1DFBAF005C262F /* MJRefreshBackFooter.m in Sources */,
 				78D8CD911F1C6646005C262F /* GKComponent.m in Sources */,
 				78D8CE031F1DFBAF005C262F /* MJRefreshHeader.m in Sources */,
@@ -883,10 +913,12 @@
 				782ACE911F2ED842002BF20C /* GKSegmentedControl.m in Sources */,
 				78D8CD8A1F1C6646005C262F /* GKTableViewController.m in Sources */,
 				78D8CDA91F1C669D005C262F /* NSString+GKUtil.m in Sources */,
+				78B06F621F3995960060A9D9 /* QQViewController.m in Sources */,
 				78D8CE0A1F1DFBAF005C262F /* MJRefreshGifHeader.m in Sources */,
 				78D8CDB51F1C6D6E005C262F /* UIColor+GKUtil.m in Sources */,
 				78D8CD891F1C6646005C262F /* GKTabBarController.m in Sources */,
 				78D8CE111F1DFBAF005C262F /* UIScrollView+MJRefresh.m in Sources */,
+				78B06F5B1F39698E0060A9D9 /* GKBaseCustomBarViewController.m in Sources */,
 				78D8CDC01F1C9723005C262F /* NSString+Hash.m in Sources */,
 				782ACE941F2F0782002BF20C /* TestSegementViewController.m in Sources */,
 				782ACE7C1F289D51002BF20C /* GKCover.m in Sources */,

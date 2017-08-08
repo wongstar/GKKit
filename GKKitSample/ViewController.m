@@ -45,7 +45,8 @@
     
     [self.view addSubview:button1];
 
-    
+    [self wr_setNavBarBarTintColor:[UIColor colorWithRed:28/255.0 green:178/255.0 blue:140/255.0 alpha:1.0]];
+    [self wr_setNavBarBackgroundAlpha:0];
     
     
 }

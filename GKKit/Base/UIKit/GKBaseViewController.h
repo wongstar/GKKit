@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "GKKitMacro.h"
 
 typedef enum : NSUInteger {
     GKNaviBarStyleDefault,  // 白底黑字，红色返回按钮
@@ -15,8 +15,6 @@ typedef enum : NSUInteger {
     GKNaviBarStyleOther,//其他自己定义的
     
 } GKNaviBarStyle;
-
-
 
 
 typedef enum  {
@@ -38,20 +36,20 @@ typedef void (^GKNavButtonClickBlock)();
 @interface GKBaseViewController : UIViewController<GKBaseViewControllerProtocolExtend>
 
 @property (nonatomic, assign) BOOL navigationBarHidden;
+
 @property (nonatomic, assign) CGFloat heightOffset;
+
 @property (nonatomic, strong) UIColor *titleColor; // default is kTextColorLevel1
 
 @property (nonatomic, assign) BOOL hideBackButton; // default is NO.
 
 @property (nonatomic,strong)UIColor *backgroundColor;//view background color
+
 @property (nonatomic,strong)UIColor *navBackgroundColor;//nav bar background color
+
 @property (nonatomic,strong)UIImage *backImage;
 
-@property (nonatomic, strong) UINavigationBar *navigationBar;
-@property (nonatomic, strong) UINavigationItem *navigationItem;
 
-@property (nonatomic,strong)UIImage *navigationBarBackgroundImage;
- 
  
 
 /**
@@ -81,6 +79,11 @@ typedef void (^GKNavButtonClickBlock)();
 
 
 -(void)setBackNormalImage:(NSString *)normal selectedImage:(NSString *)selected;
+
+
+- (void)setNavBarTintColor:(UIColor *)titleColor;
+
+-(void)setNaviBackgroundColor:(UIColor *)navColor;
 
 - (GKNaviBarStyle)naviBarStyle;
 @end
