@@ -1,6 +1,6 @@
 //
-//  NSObject+YYModel.h
-//  YYKit <https://github.com/ibireme/YYKit>
+//  NSObject+GKModel.h
+//  GKKit <https://github.com/ibireme/GKKit>
 //
 //  Created by ibireme on 15/5/10.
 //  Copyright (c) 2015 ibireme.
@@ -20,30 +20,30 @@ NS_ASSUME_NONNULL_BEGIN
  * Set object properties with a key-value dictionary (like KVC).
  * Implementations of `NSCoding`, `NSCopying`, `-hash` and `-isEqual:`.
  
- See `YYModel` protocol for custom methods.
+ See `GKModel` protocol for custom methods.
  
  
  Sample Code:
     
      ********************** json convertor *********************
-     @interface YYAuthor : NSObject
+     @interface GKAuthor : NSObject
      @property (nonatomic, strong) NSString *name;
      @property (nonatomic, assign) NSDate *birthday;
      @end
-     @implementation YYAuthor
+     @implementation GKAuthor
      @end
  
-     @interface YYBook : NSObject
+     @interface GKBook : NSObject
      @property (nonatomic, copy) NSString *name;
      @property (nonatomic, assign) NSUInteger pages;
-     @property (nonatomic, strong) YYAuthor *author;
+     @property (nonatomic, strong) GKAuthor *author;
      @end
-     @implementation YYBook
+     @implementation GKBook
      @end
     
      int main() {
          // create model from json
-         YYBook *book = [YYBook modelWithJSON:@"{\"name\": \"Harry Potter\", \"pages\": 256, \"author\": {\"name\": \"J.K.Rowling\", \"birthday\": \"1965-07-31\" }}"];
+         GKBook *book = [GKBook modelWithJSON:@"{\"name\": \"Harry Potter\", \"pages\": 256, \"author\": {\"name\": \"J.K.Rowling\", \"birthday\": \"1965-07-31\" }}"];
  
          // convert model to json
          NSString *json = [book modelToJSONString];
@@ -51,12 +51,12 @@ NS_ASSUME_NONNULL_BEGIN
      }
  
      ********************** Coding/Copying/hash/equal *********************
-     @interface YYShadow :NSObject <NSCoding, NSCopying>
+     @interface GKShadow :NSObject <NSCoding, NSCopying>
      @property (nonatomic, copy) NSString *name;
      @property (nonatomic, assign) CGSize size;
      @end
  
-     @implementation YYShadow
+     @implementation GKShadow
      - (void)encodeWithCoder:(NSCoder *)aCoder { [self modelEncodeWithCoder:aCoder]; }
      - (id)initWithCoder:(NSCoder *)aDecoder { self = [super init]; return [self modelInitWithCoder:aDecoder]; }
      - (id)copyWithZone:(NSZone *)zone { return [self modelCopy]; }
@@ -65,7 +65,7 @@ NS_ASSUME_NONNULL_BEGIN
      @end
  
  */
-@interface NSObject (YYModel)
+@interface NSObject (GKModel)
 
 /**
  Creates and returns a new instance of the receiver from a json.
@@ -91,7 +91,7 @@ NS_ASSUME_NONNULL_BEGIN
  property, this method will try to convert the value based on these rules:
  
      `NSString` or `NSNumber` -> c number, such as BOOL, int, long, float, NSUInteger...
-     `NSString` -> NSDate, parsed with format "yyyy-MM-dd'T'HH:mm:ssZ", "yyyy-MM-dd HH:mm:ss" or "yyyy-MM-dd".
+     `NSString` -> NSDate, parsed with format "GKGK-MM-dd'T'HH:mm:ssZ", "GKGK-MM-dd HH:mm:ss" or "GKGK-MM-dd".
      `NSString` -> NSURL.
      `NSValue` -> struct or union, such as CGRect, CGSize, ...
      `NSString` -> SEL, Class.
@@ -121,7 +121,7 @@ NS_ASSUME_NONNULL_BEGIN
  property, this method will try to convert the value based on these rules:
  
      `NSString`, `NSNumber` -> c number, such as BOOL, int, long, float, NSUInteger...
-     `NSString` -> NSDate, parsed with format "yyyy-MM-dd'T'HH:mm:ssZ", "yyyy-MM-dd HH:mm:ss" or "yyyy-MM-dd".
+     `NSString` -> NSDate, parsed with format "GKGK-MM-dd'T'HH:mm:ssZ", "GKGK-MM-dd HH:mm:ss" or "GKGK-MM-dd".
      `NSString` -> NSURL.
      `NSValue` -> struct or union, such as CGRect, CGSize, ...
      `NSString` -> SEL, Class.
@@ -217,7 +217,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Provide some data-model method for NSArray.
  */
-@interface NSArray (YYModel)
+@interface NSArray (GKModel)
 
 /**
  Creates and returns an array from a json-array.
@@ -238,7 +238,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  Provide some data-model method for NSDictionary.
  */
-@interface NSDictionary (YYModel)
+@interface NSDictionary (GKModel)
 
 /**
  Creates and returns a dictionary from a json.
@@ -258,9 +258,9 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  If the default model transform does not fit to your model class, implement one or
  more method in this protocol to change the default key-value transform process.
- There's no need to add '<YYModel>' to your class header.
+ There's no need to add '<GKModel>' to your class header.
  */
-@protocol YYModel <NSObject>
+@protocol GKModel <NSObject>
 @optional
 
 /**
@@ -282,14 +282,14 @@ NS_ASSUME_NONNULL_BEGIN
         }
  
     model:
-        @interface YYBook : NSObject
+        @interface GKBook : NSObject
         @property NSString *name;
         @property NSInteger page;
         @property NSString *desc;
         @property NSString *bookID;
         @end
         
-        @implementation YYBook
+        @implementation GKBook
         + (NSDictionary *)modelCustomPropertyMapper {
             return @{@"name"  : @"n",
                      @"page"  : @"p",
@@ -310,20 +310,20 @@ NS_ASSUME_NONNULL_BEGIN
  object will be add to the array/set/dictionary.
  
   Example:
-        @class YYShadow, YYBorder, YYAttachment;
+        @class GKShadow, GKBorder, GKAttachment;
  
-        @interface YYAttributes
+        @interface GKAttributes
         @property NSString *name;
         @property NSArray *shadows;
         @property NSSet *borders;
         @property NSDictionary *attachments;
         @end
  
-        @implementation YYAttributes
+        @implementation GKAttributes
         + (NSDictionary *)modelContainerPropertyGenericClass {
-            return @{@"shadows" : [YYShadow class],
-                     @"borders" : YYBorder.class,
-                     @"attachments" : @"YYAttachment" };
+            return @{@"shadows" : [GKShadow class],
+                     @"borders" : GKBorder.class,
+                     @"attachments" : @"GKAttachment" };
         }
         @end
  
@@ -340,17 +340,17 @@ NS_ASSUME_NONNULL_BEGIN
  (both singular and containers via `+modelContainerPropertyGenericClass`).
  
  Example:
-        @class YYCircle, YYRectangle, YYLine;
+        @class GKCircle, GKRectangle, GKLine;
  
-        @implementation YYShape
+        @implementation GKShape
 
         + (Class)modelCustomClassForDictionary:(NSDictionary*)dictionary {
             if (dictionary[@"radius"] != nil) {
-                return [YYCircle class];
+                return [GKCircle class];
             } else if (dictionary[@"width"] != nil) {
-                return [YYRectangle class];
+                return [GKRectangle class];
             } else if (dictionary[@"y2"] != nil) {
-                return [YYLine class];
+                return [GKLine class];
             } else {
                 return [self class];
             }
