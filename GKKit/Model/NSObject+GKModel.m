@@ -9,8 +9,8 @@
 //  LICENSE file in the root directory of this source tree.
 //
 
-#import "NSObject+YYModel.h"
-#import "YYClassInfo.h"
+#import "NSObject+GKModel.h"
+#import "GKClassInfo.h"
 #import <objc/message.h>
 
 #define force_inline __inline__ __attribute__((always_inline))

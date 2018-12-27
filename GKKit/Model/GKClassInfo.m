@@ -9,7 +9,7 @@
 //  LICENSE file in the root directory of this source tree.
 //
 
-#import "YYClassInfo.h"
+#import "GKClassInfo.h"
 #import <objc/runtime.h>
 
 YYEncodingType YYEncodingGetType(const char *typeEncoding) {
