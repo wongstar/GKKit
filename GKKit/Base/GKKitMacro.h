@@ -225,21 +225,21 @@ sizeWithFont:font constrainedToSize:maxSize lineBreakMode:mode] : CGSizeZero;
 /**
  Returns a dispatch_time delay from now.
  */
-static inline dispatch_time_t dispatch_time_delay(NSTimeInterval second) {
+static inline dispatch_time_t gk_dispatch_time_delay(NSTimeInterval second) {
     return dispatch_time(DISPATCH_TIME_NOW, (int64_t)(second * NSEC_PER_SEC));
 }
 
 /**
  Returns a dispatch_wall_time delay from now.
  */
-static inline dispatch_time_t dispatch_walltime_delay(NSTimeInterval second) {
+static inline dispatch_time_t gk_dispatch_walltime_delay(NSTimeInterval second) {
     return dispatch_walltime(DISPATCH_TIME_NOW, (int64_t)(second * NSEC_PER_SEC));
 }
 
 /**
  Returns a dispatch_wall_time from NSDate.
  */
-static inline dispatch_time_t dispatch_walltime_date(NSDate *date) {
+static inline dispatch_time_t gk_dispatch_walltime_date(NSDate *date) {
     NSTimeInterval interval;
     double second, subsecond;
     struct timespec time;
@@ -256,14 +256,14 @@ static inline dispatch_time_t dispatch_walltime_date(NSDate *date) {
 /**
  Whether in main queue/thread.
  */
-static inline bool dispatch_is_main_queue() {
+static inline bool gk_dispatch_is_main_queue() {
     return pthread_main_np() != 0;
 }
 
 /**
  Submits a block for asynchronous execution on a main queue and returns immediately.
  */
-static inline void dispatch_async_on_main_queue(void (^block)()) {
+static inline void gk_dispatch_async_on_main_queue(void (^block)()) {
     if (pthread_main_np()) {
         block();
     } else {
@@ -274,7 +274,7 @@ static inline void dispatch_async_on_main_queue(void (^block)()) {
 /**
  Submits a block for execution on a main queue and waits until the block completes.
  */
-static inline void dispatch_sync_on_main_queue(void (^block)()) {
+static inline void gk_dispatch_sync_on_main_queue(void (^block)()) {
     if (pthread_main_np()) {
         block();
     } else {
