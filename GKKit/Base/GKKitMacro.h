@@ -229,6 +229,7 @@ static inline dispatch_time_t gk_dispatch_time_delay(NSTimeInterval second) {
     return dispatch_time(DISPATCH_TIME_NOW, (int64_t)(second * NSEC_PER_SEC));
 }
 
+
 /**
  Returns a dispatch_wall_time delay from now.
  */
@@ -260,6 +261,7 @@ static inline bool gk_dispatch_is_main_queue() {
     return pthread_main_np() != 0;
 }
 
+
 /**
  Submits a block for asynchronous execution on a main queue and returns immediately.
  */
@@ -270,6 +272,7 @@ static inline void gk_dispatch_async_on_main_queue(void (^block)()) {
         dispatch_async(dispatch_get_main_queue(), block);
     }
 }
+
 
 /**
  Submits a block for execution on a main queue and waits until the block completes.
