@@ -30,23 +30,22 @@
         titleView = [[UILabel alloc] initWithFrame:CGRectZero];
         titleView.backgroundColor = [UIColor clearColor];
         titleView.font = [UIFont systemFontOfSize:17];
-        
-        UIColor *color = self.titleColor;
-        if (nil == color) {
-            if ([self showFirstLevelNavigationBarBackgroudImage]) {
-                color = [UIColor whiteColor];
-            }
-            else if (GKNaviBarStyleRed == [self naviBarStyle]) {
-                color = [UIColor whiteColor];
-            }
-            else {
-                color = kTextColorLevel1;
-            }
-        }
-        titleView.textColor = color;
-        
         self.navigationItem.titleView = titleView;
     }
+    
+    UIColor *color = self.titleColor;
+    if (nil == color) {
+        if ([self showFirstLevelNavigationBarBackgroudImage]) {
+            color = [UIColor whiteColor];
+        }
+        else if (GKNaviBarStyleRed == [self naviBarStyle]) {
+            color = [UIColor whiteColor];
+        }
+        else {
+            color = kTextColorLevel1;
+        }
+    }
+    titleView.textColor = color;
     titleView.text = title;
     [titleView sizeToFit];
 }
@@ -66,9 +65,9 @@
 - (void)setNavBarTintColor:(UIColor *)titleColor
 {
     self.titleColor = titleColor;
-   
+    
     [self wr_setNavBarTintColor:self.titleColor];
-
+    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -108,9 +107,9 @@
     
     self.view.backgroundColor = self.backgroundColor;//
     
-
+    
     [self setNavBarAppearence];
-   
+    
     if (0 < [self.navigationController.viewControllers indexOfObject:self]) {
         if (NO == self.hideBackButton) {
             [self addBackButton];
@@ -139,7 +138,7 @@
 
 - (void)setNavBarAppearence
 {
-  
+    
     self.navigationController.navigationBar.hidden = NO;
     // 设置导航栏默认的背景颜色
     [UIColor wr_setDefaultNavBarBarTintColor:self.navBackgroundColor];
@@ -185,9 +184,9 @@
 
 
 -(void)setBackNormalImage:(NSString *)normal selectedImage:(NSString *)selected{
-   
-     [backButton setImage:[UIImage imageNamed:normal] forState:UIControlStateNormal];
-     [backButton setImage:[UIImage imageNamed:selected] forState:UIControlStateSelected];
+    
+    [backButton setImage:[UIImage imageNamed:normal] forState:UIControlStateNormal];
+    [backButton setImage:[UIImage imageNamed:selected] forState:UIControlStateSelected];
 }
 
 - (UIImage *)icon_back
@@ -200,7 +199,7 @@
     }else if(GKNaviBarStyleDefault==gkNaviBarStyle){
         UIImage *image=[UIImage imageNamedWithGK:@"icon_back_white"];
         
-         return image;
+        return image;
     }else if(GKNaviBarStyleOther==gkNaviBarStyle) {
         if(_backImage==nil){
             _backImage=[UIImage imageNamedWithGK:@"black_back_icon"];
@@ -227,11 +226,11 @@
 //- (void)viewWillAppear:(BOOL)animated
 //{
 //    [super viewWillAppear:animated];
-//    
+//
 ////    [self.navigationController setNavigationBarHidden:self.navigationBarHidden animated:animated];
 ////    [[self.navigationController.navigationBar topItem] setHidesBackButton:YES];
-////    
-////    
+////
+////
 ////    if ([self showFirstLevelNavigationBarBackgroudImage]) {
 ////        [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
 ////    }
@@ -252,10 +251,10 @@
 //- (void)viewDidAppear:(BOOL)animated
 //{
 //    [super viewDidAppear:animated];
-//    
+//
 ////    [self.navigationController setNavigationBarHidden:self.navigationBarHidden animated:animated];
 ////    [[self.navigationController.navigationBar topItem] setHidesBackButton:YES];
-//    
+//
 //}
 
 
@@ -304,7 +303,9 @@
 
 - (GKNaviBarStyle)naviBarStyle
 {
-    return GKNaviBarStyleDefault;
+    return self.barStyle;
+    
+    //    return GKNaviBarStyleDefault;
 }
 
 
@@ -319,7 +320,7 @@
 - (void)setNavButtonWithTitle:(NSString *)title
             withIconImageName:(NSString *)iconImageName
             withNavButtonType:(NavButtonType)buttonType
-            withNavButtonClickBlock:(GKNavButtonClickBlock)navButtonClickBlock
+      withNavButtonClickBlock:(GKNavButtonClickBlock)navButtonClickBlock
 {
     if (title) {
         if (buttonType == NavBackButtonType || buttonType == NavLeftButtonType) {
@@ -350,7 +351,7 @@
 
 -(void)setNavBackgroundImage:(UIImage *)image{
     [self.navigationController.navigationBar setBackgroundImage:image
-                                              forBarMetrics:UIBarMetricsDefault];
+                                                  forBarMetrics:UIBarMetricsDefault];
 }
 
 -(void)efNavleftButtonClick:(id)sender
