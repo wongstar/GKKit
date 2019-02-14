@@ -505,7 +505,7 @@ static const NSString * CSToastQueueKey             = @"CSToastQueueKey";
         self.tapToDismissEnabled = YES;
         self.queueEnabled = YES;
         self.defaultDuration = 3.0;
-        self.defaultPosition = CSToastPositionBottom;
+        self.defaultPosition = CSToastPositionCenter;
     }
     return self;
 }

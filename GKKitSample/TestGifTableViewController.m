@@ -48,6 +48,8 @@
     return cell;
 }
 
+
+
 -(void)loadMore{
     debugLog(@"LoadMore...");
 }
@@ -55,8 +57,8 @@
 -(void)pullToRefresh{
     debugLog(@"pull to referesh..");
     
-    dispatch_after(dispatch_time_delay(2), dispatch_get_main_queue(), ^{
-        [self headerEndFrefreshing];
-    });
+//    dispatch_after(gk_dispatch_time_delay(2), dispatch_get_main_queue(), ^{
+//        [self headerEndFrefreshing];
+//    });
 }
 @end

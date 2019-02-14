@@ -26,6 +26,7 @@
     [button addTarget:self action:@selector(gotoAddView) forControlEvents:UIControlEventTouchUpInside];
     
     [button setTitle:@"Test BaseViewContrller" forState:UIControlStateNormal];
+     [self.view addSubview:button];
     
     [button textLayoutImageBelow:20];
 
